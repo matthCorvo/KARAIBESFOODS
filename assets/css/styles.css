@@ -700,7 +700,7 @@ img{
     .registercacher{display:block;}*/
   }
   @media (max-width: 764px) {
-    .register{font-size:13px;}
+    .register a , .register button{font-size:10px;}
     .btn-sm{font-size:10px;}
   }
 
