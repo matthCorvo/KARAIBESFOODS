@@ -121,7 +121,9 @@
 #menu .category span{
   font-weight: 500;
 }
-
+@media (max-width: 430px) {
+  .menu-btns p{font-size:13px;}
+}
 @media screen and (min-width: 600px){
   #menu .food-item{
       display: grid;
