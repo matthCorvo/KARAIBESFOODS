@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/carte.css">
+
+        <title>KARAÏBES FOODS</title>
+    </head>
+    <body>
+
+      <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+                                        <!--1er NAV BAR TOP-->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style=" width: 100%; height: 50px;">
+    <div class="container">
+    
+    <div class="navbar-text register">
+        <section class="color-1">
+        <nav class="cl-effect-1 ">
+    
+              <button class="nav1 btn btn-sm my-2 my-sm-0" type="submit" ><a href="InscriptionRestaurant.html" target="_blank" >Inscrire un restaurateur</a></button>
+              | 
+              <!--boutton pour S'identifier-->
+              <a  href="#" title="Register"  data-toggle="modal" data-target="#signinPage" style=" text-decoration: none;" >S'identifier <i class="fas fa-user-plus"></i></a> 
+              / 
+              <!--boutton pour S'inscrire-->
+    
+              <a  href="#" title="Login" data-toggle="modal" data-target="#signupPage" style="text-decoration: none;">S'inscrire <i class="fas fa-sign-in-alt"></i></a>
+              <form>
+    <!--MODAL Page pour S'identifier-->
+              <div class="modal fade" id=signupPage>
+              <div class="modal-dialog">
+              <div class="modal-content">
+    
+                <div class="modal-header text-center">
+                <h4 class="modal-title text-center w-100 font-weight-bold">Inscription</h4>
+                <button type="button" class="close" data-dismiss="modal" arial-label="Close">&times;</button>
+                </div>
+                <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+    <i class="fas fa-user prefix grey-text"></i>                                            
+                          <label data-error="wrong" data-success="right">Ton nom</label>
+                        <input type="text" class="form-control validate" placeholder="mete nom Aw*"required>
+                        </div>
+    
+                        <div class="md-form mb-5">
+                          <i class="fas fa-envelope prefix grey-text"></i>                                           
+                          <label data-error="wrong" data-success="right">Ton e-mail</label>
+                        <input type="email" class="form-control validate" placeholder="monemail@gmail.com"required>
+                        </div>
+    
+                        <div class="md-form mb-5">
+                          <i class="fas fa-lock prefix grey-text"></i>                                          
+                          <label data-error="wrong" data-success="right">Ton mot de passe</label>
+                          <input type="password" class="form-control validate " placeholder="**************" required>
+                        </div>
+                      </div>
+                  
+                      <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-success">S'inscrire</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+                <!-- S'inscrire modal page-->
+                <form>
+                    <div class="modal fade" id="signinPage">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+    
+                          <div class="modal-header text-center"> 
+                            <h3 class="modal-title w-100 dark-grey-text font-weight-bold">S'identifier</h3>
+                            <button type="button" class="close" data-dismiss="modal" arial-label="Close">&times;</button>
+                          </div>
+    
+                          <div class="modal-body mx-4">
+                            <div class="md-form ">
+                              <label data-error="wrong" data-success="right">Ton e-mail</label>
+                          <input type="email" class="form-control validate " placeholder="monemail@gmail.com"required>
+                          </div>
+    
+                          <div class="md-form "style="margin-top: 2%;">
+                            <label data-error="wrong" data-success="right">Ton mot de passe</label>
+                            <input type="password" class="form-control validate " placeholder="**************" required>
+                            <p class="font-small green-text d-flex justify-content-center"><a href="#" style="color:blue;">Mot de passe oublier?</a></p>
+                          </div>
+    
+                          <div class="text-center mb-3" style="margin-top: 5%;">
+                            <button class="btn btn-success btn-block z-depth-la">S'identifier</button>
+                          </div>
+                            <p class="font-small dark-grey-text d-flex justify-content-center">Ou identifier vous avec:</p>
+                          <div class="row my-3 justify-content-center">
+                            
+                            <button type="button" class="btn btn-primary z-depth-la" style="margin: 5px;"><i class="fab fa-facebook-f text-center"></i></button>
+    
+                            <button type="button" class="btn btn-link z-depth-la" style="border: 3px solid gray;margin: 5px;"><i class="fab fa-twitter text-center"></i></button>
+    
+                            <button type="button" class="btn btn-danger z-depth-la" style="margin: 5px;"><i class="fab fa-google-plus-g text-center"></i></button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+    
+                          </nav>
+                  </section>
+              </div>                
+    </nav>
+    
+                  <!-- 2eme NAV BAR menu-->
+      
+                  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                    <i class='bx navbar-brand bx-moon change-theme' id="theme-button"></i>
+                    <a class="navbar-brand" href="index.html"><span class="logo"><b>KARAÏBES</b></span><span  class="logo1">Foods</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>    
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">    
+                      <ul class="navbar-nav mr-auto " style="margin-left: 20%;">
+                        <li class="nav-item active">
+                          <a class="btn navbar-brand btn-light " href="Resto.html" >
+                            Réstaurateurs    <span style="color:green;"><i class="fas fa-utensils"></i>        </span>    </a>
+                          </li>
+                          <li class="nav-item">        
+                            <a   class="navbar-brand btn  btn-light " href="Carte.html" >La Carte<span style="color:green;"> <i class="fas fa-globe-africa"></i></span></a>
+                          </li>
+                          <li class="nav-item">        
+                            
+                            <a class="btn  btn-light navbar-brand" href="Apropos.html" >A propos  <i  style="color: orangered;" class="far fa-question-circle"></i></a>
+                          </li>
+                    </div>
+                        </ul>
+                
+                </div>
+                  </nav>
+                       
+                        </div>
+                    </div>
+    
+                <center>
+                
+                  <h1 style="margin-top:2.5%;">Tous vos restaurateurs en Iles-de-France</h1> <div class="select-wrp">
+                
+              </div>
+                 
+              </center>
+
+           <!--Google map-->
+
+           <div style="position: relative">
+            <div id="map-container">
+              <div id="map-overview" class="hidden">Retourner sur Google Maps
+              
+              </div>
+              <div id="map-overview" style="margin-top:4%;">
+              <select data-placeholder="Choose Location">
+                <option>Tous vos restaurateurs</option>
+                <option>Food-trucks</option>
+                <option>Restaurants</option>
+                <option>Traiteurs</option>
+            </select>
+          </div>
+
+              <div id="map-canvas"></div>
+            </div>
+          
+            <div id="map-info">
+              <div class="gp BANMBOKIT ">
+                <h2>BANM BOKIT</h2>
+               <h6> 20 Rue Barbanègre, 75019 Paris</h6>
+                <h7>Traiteur, Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+                <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/p720x720/136965207_1871778156312470_2124707015949610151_o.jpg?_nc_cat=103&ccb=2&_nc_sid=110474&_nc_ohc=sLUMHD00R0YAX8ZFZ3e&_nc_ht=scontent-cdt1-1.xx&tp=6&oh=1ef15a8e107c7a257cc9bf74170bc3fe&oe=603354FF" alt="BANM BOKIT" style="width:50%;height: 50%;">
+               <div style="margin-top: 2.5%;">
+                   <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/banm-bokit/WmCLC3DUQXiTUTW6d01JzA?utm_source=google&utm_medium=organic&utm_campaign=place-action-link" target="_blank" class="btn btn-outline-success">Uber Eats</a>  <a href="https://deliveroo.fr/fr/menu/paris/19eme-pont-de-flandre/banm-bokit?utm_medium=affiliate&utm_source=google_maps_link" target="_blank"  class="btn btn-outline-primary">Déliveroo</a></p>
+                  </div>
+                  <div style="margin-top: 1%;">
+
+                   <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/BANM+BOKIT/@48.8935652,2.3826851,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66d41401121e1:0xba3e8c9734ef43ae!8m2!3d48.8935617!4d2.3848738" target="_blank">Voir sur Google Maps</a></p>
+                  </div>
+              
+                <div style="margin-top: 1%;">
+
+                  <p><i class="fas fa-mobile-alt"></i> <a href="tel:+330142800753" target="_blank"> 01 42 80 07 53</a></p>
+                 </div>
+                 <div style="margin-top: 1%;">
+
+                <a href="https://fr-fr.facebook.com/Banm-Bokit-Traiteur-Evenementiel-160785494078420/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+                <a href="https://twitter.com/banmbokit?lang=fr" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-twitter-square "></i></a> 
+                <a href="https://www.instagram.com/banmbokit/?hl=fr" target="_blank" style="text-decoration: none;font-size: 40px; color:orangered"><i class="fab fa-instagram-square "></i></a>
+              </div>
+            </div>
+
+
+              <div class="gp BokitAw ">
+                <h2>Bokit'Aw</h2>
+                <h6> 52 Rue Boinod, 75018 Paris</h6>
+                <h7>Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+                <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/99289308_2752043008258500_2043616710124109824_o.jpg?_nc_cat=108&ccb=2&_nc_sid=2d5d41&_nc_ohc=cBFCfX8aY_oAX_uY1K9&_nc_ht=scontent-cdg2-1.xx&tp=6&oh=123cf4b35ace652b33e767ece741b8eb&oe=603246A2" alt="BokitAw" style="width:70%;height: 50%;">
+               <div style="margin-top: 2.5%;">
+                   <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/bokitaw/7R7Wqo8JSYeQzEbqloJoUQ" target="_blank" class="btn btn-outline-success">Uber Eats</a>  <a href="https://deliveroo.fr/fr/menu/paris/18eme-poissionniers/bokitaw?utm_medium=affiliate&utm_source=google_maps_link" target="_blank"  class="btn btn-outline-primary">Déliveroo</a></p>
+                  </div>
+                  <div style="margin-top: 1%;">
+
+                   <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/Bokit'Aw/@48.8946921,2.3503721,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x47e66e6191df9d5f:0xdb3564e35f3f9a4e!2sBokit'Aw!8m2!3d48.8946886!4d2.3525608!3m4!1s0x47e66e6191df9d5f:0xdb3564e35f3f9a4e!8m2!3d48.8946886!4d2.3525608?hl=fr" target="_blank">Voir sur Google Maps</a></p>
+                  </div>
+              
+                
+                <div style="margin-top: 1%;">
+
+                  <p><i class="fas fa-mobile-alt"></i> <a href="tel:+330173749945" target="_blank">  01 73 74 99 45</a></p>
+                 </div>
+                 <div style="margin-top: 1%;">
+
+                <a href="https://fr-fr.facebook.com/bokitaw/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+                <a href="https://twitter.com/bokitaw?lang=fr" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-twitter-square "></i></a> 
+                <a href="https://www.instagram.com/bokitaw/?hl=fr" target="_blank" style="text-decoration: none;font-size: 40px; color:orangered"><i class="fab fa-instagram-square "></i></a>
+              <p>Leur site : <a href="http://bokitaw.fr/">bokitaw.fr</a></p>
+              </div>
+            </div>
+
+              <div class="gp BokitFactory">
+                <h2>Bokit Factory</h2>
+                <h6> 58 Rue des Bergers, 75015 Paris</h6>
+                <h7>Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+                <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/118307907_791391001601651_8032866883784293786_o.jpg?_nc_cat=108&ccb=2&_nc_sid=9267fe&_nc_ohc=U5rxtQxqGN4AX_QAMSb&_nc_ht=scontent-cdg2-1.xx&oh=d3686159263f767ee0c1bf3784c9656d&oe=603200BF" alt="BokitAw" style="width:70%;">
+               <div style="margin-top: 2.5%;">
+                   <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr-en/paris/food-delivery/bokit-factory/9I9DN1g1QM6bpLN9m_HzjQ" target="_blank" class="btn btn-outline-success">Uber Eats</a>  <a href="https://deliveroo.fr/fr/menu/paris/Boucicaut/bokit-factory?utm_source=CentralApp&utm_medium=affiliate" target="_blank"  class="btn btn-outline-primary">Déliveroo</a> <a href="https://www.just-eat.fr/menu/bokit-factory?utm_source=google&utm_campaign=orderaction&utm_medium=organic" target="_blank"  class="btn btn-outline-danger">Just Eat</a></p>
+                  </div>
+                  <div style="margin-top: 1%;">
+
+                   <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/Bokit+Factory/@48.8423491,2.2782972,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671ffb7fe3c87:0x1a7dadc5a3642248!8m2!3d48.8423456!4d2.2804859?hl=fr" target="_blank">Voir sur Google Maps</a></p>
+                  </div>
+              
+                
+                <div style="margin-top: 1%;">
+
+                  <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33988051454" target="_blank">  09 88 05 14 54</a></p>
+                 </div>
+                 <div style="margin-top: 1%;">
+
+                <a href="https://www.facebook.com/bokitfactory/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+                <a href="https://www.instagram.com/bokit_factory/" target="_blank" style="text-decoration: none;font-size: 40px; color:orangered"><i class="fab fa-instagram-square "></i></a>
+              <p>Leur site : <a href="https://bokitfactory.fr/fr">bokitfactory.fr</a></p>
+              </div>          
+                </div>
+              
+              <div class="gp LAngeBokits">
+                <h2>L'Ange Bokits</h2>
+                <h6> 115-117 Avenue Raspail Devant le Parc du Coteau, 94250 Gentilly</h6>
+                <h7>Food-trucks</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMuDt674_077jJ1M8FCav6e9D7FSLZaZK7hhvyE=w408-h306-k-no" alt="BokitAw" style="width:80%;">
+                  <div style="margin-top: 2.5%;">
+
+                   <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/L%E2%80%99Ange+Bokits/@48.8093167,2.3408956,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6711803aff801:0x4e328a84c447a2fc!8m2!3d48.8093167!4d2.3430843" target="_blank">Voir sur Google Maps</a></p>
+                  </div>
+              
+                
+                <div style="margin-top: 1%;">
+
+                  <p><i class="fas fa-mobile-alt"></i> <a href="tel:+330635186603" target="_blank">  06 35 18 66 03</a></p>
+                 </div>
+                 <div style="margin-top: 1%;">
+
+                <a href="https://fr-fr.facebook.com/Lange-Bokits-1345052512183579/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+              </div>          
+              </div>
+
+              <div class="gp BokitandCo">
+                <h2>Bokit and Co</h2>
+                <h6> 170 Avenue de Verdun, 92320 Châtillon</h6>
+                <h7>Food-trucks</h7>
+
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+<img src="https://lh5.googleusercontent.com/p/AF1QipPI14W8R0Qtse7gJWTB-wftf7RuHAbSMvacO96X=w234-h144-p-k-no" alt="BokitAw" style="width:80%;">
+<div style="margin-top: 2.5%;">
+
+  <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/bokit-and-co/rK_RKS_tTe2T-4obEBngpw" target="_blank" class="btn btn-outline-success">Uber Eats</a> </p>
+</div>
+<div style="margin-top: 1%;">
+
+<p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/Bokit+and+Co/@48.7939486,2.2703813,17z/data=!3m1!4b1!4m5!3m4!1s0x47e670c8656e7155:0x8c22f1f642a9ac18!8m2!3d48.7939451!4d2.27257" target="_blank">Voir sur Google Maps</a></p>
+</div>  
+<div style="margin-top: 1%;">
+  <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33699773243" target="_blank">  06 99 77 32 43</a></p>
+ </div>
+ <div style="margin-top: 1%;">
+<a href="https://fr-fr.facebook.com/bktndc/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+<a href="https://twitter.com/bokitandco" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-twitter-square "></i></a> 
+<a href="https://www.instagram.com/bokitandco/?hl=fr" target="_blank" style="text-decoration: none;font-size: 40px; color:orangered"><i class="fab fa-instagram-square "></i></a>
+<p>Leur site : <a href="http://bokitandco.com/menu/">bokitandco.com</a></p>              </div>          
+              </div>
+         
+              <div class="gp KINGBOKIT">
+                <h2>  KING BOKIT </h2>
+                <h6> 7 Rue Edgar Quinet, 93350 Le Bourget</h6>
+                <h7>Réstaurant</h7>
+
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+<img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/s960x960/81753100_502887080331629_5879082815382880256_o.jpg?_nc_cat=111&ccb=2&_nc_sid=110474&_nc_ohc=zCd-YnkS5ZgAX--zDqV&_nc_ht=scontent-cdg2-1.xx&tp=7&oh=943debf7ba9303026722725936c85dc1&oe=602F8BF7" alt="KINGBOKIT" style="width:80%;">
+<div style="margin-top: 2.5%;">
+
+  <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/king-bokit/NW3goKkMTVCyvCzG9gDmhA?utm_source=AdWords_NonBrand&utm_campaign=CM2052263-search-google-nonbrand_61_-99_FR-National_e_all_acq_cpc_fr-FR_DSA_Exact__dsa-944069416759_459372912477_106305021574_b_c&campaign_id=10951406612&adg_id=106305021574&fi_id=&match=b&net=g&dev=c&dev_m=&ad_id=459372912477&cre=459372912477&kwid=dsa-944069416759&kw=&placement=&tar=&gclid=EAIaIQobChMI-N2snNyx7gIVFIXVCh19IAYQEAAYASAAEgIjPfD_BwE&gclsrc=aw.ds" target="_blank" class="btn btn-outline-success">Uber Eats</a>  <a href="https://deliveroo.fr/fr/menu/paris/dugny-le-bourget/maestro-grill-et-gourmet-des-tropiques" target="_blank"  class="btn btn-outline-primary">Déliveroo</a> </p>
+</div>
+<div style="margin-top: 1%;">
+
+<p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/KING+BOKIT/@48.9356894,2.4254582,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66bbcce27d331:0x3a0ed683e079a972!8m2!3d48.9356894!4d2.4276469" target="_blank">Voir sur Google Maps</a></p>
+</div>  
+<div style="margin-top: 1%;">
+  <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33952783702" target="_blank"> 09 52 78 37 02</a></p>
+ </div>
+ <div style="margin-top: 1%;">
+<a href="https://fr-fr.facebook.com/kingbokit93/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+              </div>
+            </div>
+
+            <div class="gp  LîleauxBokits">
+              <h2>L'île aux Bokits</h2>
+              <h6> 34 Boulevard de Nesles, 77420 Champs-sur-Marne</h6>
+              <h7>Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+              <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/118362768_3852780148082098_3349045054474574455_o.jpg?_nc_cat=104&ccb=2&_nc_sid=2d5d41&_nc_ohc=cdh23x9qMDMAX_IJvdM&_nc_oc=AQlSjh1-Gf3KEH7wsil0FtPwTREpvNX_D40fP3vs2eC0d7x_pBzcDMyjK1iVw38ayXE&_nc_ht=scontent-cdg2-1.xx&tp=6&oh=6cfbeae7e0a89ac1424877594851c19e&oe=60325C7A" alt="BokitAw" style="width:60%;">
+             <div style="margin-top: 2.5%;">
+                 <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/lile-aux-bokits-champs-sur-marne/7-_jB-9wTwOV3EppAMUZgQ?utm_source=google&utm_medium=organic&utm_campaign=place-action-link" target="_blank" class="btn btn-outline-success">Uber Eats</a>  <a href="https://deliveroo.fr/fr/menu/paris/champs-sur-marne/lile-aux-bokits-paris?utm_medium=affiliate&utm_source=google_maps_link" target="_blank"  class="btn btn-outline-primary">Déliveroo</a></p>
+                </div>
+                <div style="margin-top: 1%;">
+
+                 <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/L'%C3%AEle+aux+Bokits/@48.8491582,2.5797373,17z/data=!3m1!4b1!4m5!3m4!1s0x47e60e27cd4e0151:0xde9fbf727941a7f7!8m2!3d48.8491582!4d2.581926" target="_blank">Voir sur Google Maps</a></p>
+                </div>
+            
+              
+              <div style="margin-top: 1%;">
+
+                <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33160052074" target="_blank"> 01 60 05 20 74</a></p>
+               </div>
+               <div style="margin-top: 1%;">
+
+              <a href="https://www.facebook.com/lileauxbokitsparis/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+              <a href="https://twitter.com/lileauxbokits" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-twitter-square "></i></a> 
+              <a href="https://www.instagram.com/lileauxbokits/?hl=fr" target="_blank" style="text-decoration: none;font-size: 40px; color:orangered"><i class="fab fa-instagram-square "></i></a>
+            </div>
+          </div>
+
+          <div class="gp  ManMan">
+            <h2>
+Chez Les Filles à ManMan'S
+</h2>
+            <h6> 55 Avenue la Bruyère, 94400 Vitry-sur-Seine</h6>
+            <h7>Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+            <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/81906206_1972904346188458_765125793599717376_n.jpg?_nc_cat=106&ccb=2&_nc_sid=110474&_nc_ohc=4qh78bUzlJAAX9Y2EBJ&_nc_ht=scontent-cdt1-1.xx&oh=c5b50ac7d27afacb5234a80a690adb33&oe=6032D745" alt="BokitAw" style="width:60%;">
+           <div style="margin-top: 2.5%;">
+               <p  >✔️Livraison :  <a href="wwhttps://w.ubereats.com/fr/paris/food-delivery/chez-les-filles-a-manmans/Dh515oTRTIWC8jnjfTXKsg" target="_blank" class="btn btn-outline-success">Uber Eats</a>  <a href="https://deliveroo.fr/fr/menu/paris/vitry-sur-seine-plateau/chez-les-filles-a-manmans" target="_blank"  class="btn btn-outline-primary">Déliveroo</a> <a href="https://www.just-eat.fr/menu/chez-les-filles-a-manmans" target="_blank"  class="btn btn-outline-danger">Just Eat</a></p>
+              </div>
+              <div style="margin-top: 1%;">
+
+               <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/Chez+Les+Filles+%C3%A0+ManMan'S/@48.7859017,2.4002636,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6739ce885f979:0xa10335b6162c9e76!8m2!3d48.7859017!4d2.4024523" target="_blank">Voir sur Google Maps</a></p>
+              </div>
+          
+            
+            <div style="margin-top: 1%;">
+
+              <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33951612069" target="_blank"> 09 51 61 20 69</a></p>
+             </div>
+             <div style="margin-top: 1%;">
+
+            <a href="https://www.facebook.com/fillesdemamans/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+          </div>
+        </div>
+
+        <div class="gp  
+        KaribbeanTruck
+        ">
+          <h2>
+            Karibbean Truck</h2>
+          <h6> 91b Rue de la Station, 95130 Franconville</h6>
+          <h7>Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+          <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/128580051_1201970963530616_7913177357274147839_o.jpg?_nc_cat=105&ccb=2&_nc_sid=a26aad&_nc_ohc=8o3fgPOhAXUAX96FsPT&_nc_ht=scontent-cdt1-1.xx&oh=f3d156bb99912f3535761d81b767d74e&oe=602FE48C" alt="BokitAw" style="width:60%;">
+         <div style="margin-top: 2.5%;">
+             <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/karibbean-truck/pUGzkPCnQD2Y_ZAnU9kVFA" target="_blank" class="btn btn-outline-success">Uber Eats</a>  </p>
+            </div>
+            <div style="margin-top: 1%;">
+
+             <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/Karibbean+Truck/@48.9947334,2.2351293,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66764869d0481:0x7ffe342f9bc969f1!8m2!3d48.9947334!4d2.237318" target="_blank">Voir sur Google Maps</a></p>
+            </div>
+        
+          
+          <div style="margin-top: 1%;">
+
+            <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33769805505" target="_blank"> 07 69 80 55 05</a></p>
+           </div>
+           <div style="margin-top: 1%;">
+          <a href="https://www.facebook.com/karibbeantruck/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+          <a href="https://www.instagram.com/karibbeantruck/?hl=fr" target="_blank" style="text-decoration: none;font-size: 40px; color:orangered"><i class="fab fa-instagram-square "></i></a>
+
+        </div>
+      </div>
+
+      <div class="gp  EspritKaraïb">
+        <h2>Esprit Karaïb - restaurant antillais 91</h2>
+        <h6> 61 Route de Corbeil, 91700 Sainte-Geneviève-des-Bois</h6>
+        <h7>Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+        <img src="http://www.restaurant-antillais-91.fr/img/plat/767-recette-de-bokit-702x336.jpg" alt="BokitAw" style="width:60%;">
+       <div style="margin-top: 2.5%;">
+           <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/esprit-karaib/uXWenJLzQw69zXcSCxva8w?utm_source=google&utm_medium=organic&utm_campaign=place-action-link" target="_blank" class="btn btn-outline-success">Uber Eats</a>  </p>
+          </div>
+          <div style="margin-top: 1%;">
+
+           <p>✔️Vente à emporter : <a href="https://www.google.com/maps?q=Esprit+Kara%C3%AFb+-+Restaurant+Antillais+91+-+Bokit,+61+Route+de+Corbeil,+91700+Sainte-Genevi%C3%A8ve-des-Bois&rlz=1C1KDEC_frFR924FR924&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiAoJi65rTuAhUH4YUKHdQdDUQQ_AUoAXoECAYQAw" target="_blank">Voir sur Google Maps</a></p>
+          </div>
+      
+        
+        <div style="margin-top: 1%;">
+
+          <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33169461943" target="_blank"> 01 69 46 19 43</a></p>
+         </div>
+         <div style="margin-top: 1%;">
+
+        <a href="https://fr-fr.facebook.com/RestaurantEspritKaraib/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+        <p>Leur site : <a href="http://www.restaurant-antillais-91.fr/">restaurant-antillais-91.fr</a></p>
+      </div>
+    </div>
+
+    <div class="gp  Tropiques">
+      <h2>Plaisir des Tropiques</h2>
+      <h6> 15 Rue d'Estienne d'Orves, 78500 Sartrouville</h6>
+      <h7>Traiteur,Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+      <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/103391344_1949616691838712_6898699765831953864_n.jpg?_nc_cat=105&ccb=2&_nc_sid=8bfeb9&_nc_ohc=L7AVdR2bqAUAX-6vvXS&_nc_ht=scontent-cdt1-1.xx&oh=3d865ef0e0d51a75d58e1310ad8398cb&oe=60331CD9" alt="BokitAw" style="width:60%;">
+     <div style="margin-top: 2.5%;">
+         <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/esprit-karaib/uXWenJLzQw69zXcSCxva8w?utm_source=google&utm_medium=organic&utm_campaign=place-action-link" target="_blank" class="btn btn-outline-success">Uber Eats</a>  </p>
+        </div>
+        <div style="margin-top: 1%;">
+
+         <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/Plaisir+des+Tropiques/@48.9472604,2.200714,17z/data=!3m1!4b1!4m5!3m4!1s0x47e666aeff4ace63:0x683628cc9ef6f7b4!8m2!3d48.9472604!4d2.2029027" target="_blank">Voir sur Google Maps</a></p>
+        </div>
+    
+      
+      <div style="margin-top: 1%;">
+
+        <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33139680531" target="_blank"> 01 39 68 05 31</a></p>
+       </div>
+       <div style="margin-top: 1%;">
+      <a href="https://fr-fr.facebook.com/plaisirdestrop/" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+      <a href="https://www.instagram.com/plaisirdestrop/" target="_blank" style="text-decoration: none;font-size: 40px; color:orangered"><i class="fab fa-instagram-square "></i></a>
+      <a href="https://twitter.com/plaisirdestrop?lang=fr" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-twitter-square "></i></a> 
+      <a href="http://www.snapchat.com/add/plaisirdestrop" target="_blank" style="text-decoration: none;font-size: 40px; color:rgb(255, 196, 0)"><i class="fab fa-snapchat-square"></i></a>
+      <p>Leur site : <a href="https://www.plaisir-des-tropiques.fr/">plaisir-des-tropiques.fr</a></p>
+    </div>
+  </div>
+
+  <div class="gp  Kaaz">
+    <h2>Kaaz Bokit</h2>
+    <h6> 125 Avenue Charles Gide, 77270 Villeparisis</h6>
+    <h7>Réstaurant</h7>
+<span>        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i> <a href=""> 3 Avis </a></span>
+    <img src="https://lh5.googleusercontent.com/p/AF1QipNUl5AZLrPmtkCYTZX6IPFPyfjiurGYRNRjc5mb=w400-h300-k-no" alt="BokitAw" style="width:60%;">
+   <div style="margin-top: 2.5%;">
+       <p  >✔️Livraison :  <a href="https://www.ubereats.com/fr/paris/food-delivery/kaaz-bokit/KZeWZa41Q5usojTi92x2pA?utm_source=google&utm_medium=organic&utm_campaign=place-action-link" target="_blank" class="btn btn-outline-success">Uber Eats</a>  </p>
+      </div>
+      <div style="margin-top: 1%;">
+
+       <p>✔️Vente à emporter : <a href="https://www.google.com/maps/place/Kaaz+Bokit/@48.9494406,2.5996899,17z/data=!3m1!4b1!4m5!3m4!1s0x47e617292f36b245:0x235b8541b2825b6c!8m2!3d48.9494406!4d2.6018786" target="_blank">Voir sur Google Maps</a></p>
+      </div>
+  
+    
+    <div style="margin-top: 1%;">
+
+      <p><i class="fas fa-mobile-alt"></i> <a href="tel:+33950766213" target="_blank"> 09 50 76 62 13</a></p>
+     </div>
+     <div style="margin-top: 1%;">
+    <a href="https://www.facebook.com/kaaz.bokit" target="_blank" style="text-decoration: none;font-size: 40px;"><i class="fab fa-facebook-square"></i></a> 
+    <p>Leur site : <a href="http://kaaz-bokit.com/">kaaz-bokit.com</a>"</p>
+  </div>
+</div>
+
+            <div class="gp namur">
+              <h2>Namur Grand Place</h2>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Namur_2007_04.JPG/800px-Namur_2007_04.JPG" alt="Grand Place Namur">
+              <p>The Place d'Armes, formerly Grand Place is a cobbled square located in Namur in Belgium. Located in the center of a fortification, a place of arms is the gathering place of a small troop and a central space hosting important ceremonies of military life.</p>
+              <p><a href="https://fr.wikipedia.org/wiki/Place_d%27Armes_(Namur)" targe="_blank">More info</a></p>
+            </div>
+          </div>
+
+          </div>         
+          
+              
+
+             <!--===== APP =======-->
+             <section class="app section bd-container">
+              <div class="app__container bd-grid">
+                  <div class="app__data">
+                      <span class="section-subtitle app__initial" style="font-size: 30px;"><span class="logo"><b>KARAÏBES</b></span><span  class="logo1">Foods</span><sup class="logo">APP</sup></span>
+                      <h2 class="section-title app__initial">
+                        L'application est disponible</h2>
+                      <p class="app__description">Trouvez notre application et téléchargez-la, vous pouvez faire des #############, des commandes de #############, voir vos ############# et bien plus encore.</p>
+                      <div class="app__stores">
+                          <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
+                          <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
+                      </div>
+                  </div>
+
+                  <img src="assets/img/movil-app.png" alt="" class="app__img">
+              </div>
+          </section>
+           
+
+     <!--========== FOOTER ==========-->
+     <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+          <div class="footer__content">
+              <a href="#" class="footer__logo">                    
+    <span class="logo"><b>KARAÏBES</b></span><span  class="logo1">Foods</span>
+              </a>
+              <span class="footer__description">Restaurants · Food-trucks · Traiteurs</span>
+              <div>
+                  <a href="https://github.com/matthCorvo/KARAIBESFOODS" class="footer__social" target="_blank"><i class="fab fa-github-square"></i></a>
+                  <a href="https://matthcorvo.github.io/Instagrampro/" class="footer__social" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                  <a href="https://www.linkedin.com/in/corvomatthieu/" class="footer__social" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://twitter.com/CodeMatth" class="footer__social" target="_blank"><i class="fab fa-twitter-square"></i></a>
+
+                </div>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">Services</h3>
+              <ul>
+                  <li><a href="Carte.html" class="footer__link">Géolocalisation</a></li> 
+                  <li><a href="#" class="footer__link">Promotions</a></li>
+                  <li><a href="#" class="footer__link">Appréciations</a></li>
+                  <li><a href="InscriptionRestaurant.html" class="footer__link">Inscrire un restaurateur</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">Informations</h3>
+              <ul>
+                  <li><a href="Apropos.html" class="footer__link">F.A.Q</a></li>
+                  <li><a href="Apropos.html" class="footer__link">Contact </a></li>
+                  <li><a href="Mentionslégales.pdf" class="footer__link">Mention Légal</a></li>
+                  <li><a href="CGU.pdf" class="footer__link">CGU</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__content">
+              <h3 class="footer__title">Adresses</h3>
+              <ul>
+                  <li>Montreal - Tokyo</li>
+                  <li>Paris - Sainte-Lucie</li>
+                  <li>999 - 888 - 777</li>
+                  <li><a href="mailto:Karaïbesfoods@email.com"> Karaïbesfoods@email.com</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer__copy">
+      <div class="lang" ></div> <a href="#" > EN</a> | <div class="langfr"></div> <a href="#" >FR </a>| <div class="langes"></div><a href="#"> ES</a> |<div class="langcr"></div><a href="#" > CR  </a >           
+
+      <p >&#169; <script>document.write(new Date().getFullYear());</script> Matthieu Corvo. All right reserved <!--<a href="https://icons8.com/icon/daZJsegJaIOE/uber-eats">Uber Eats icon by Icons8--></a></p>
+  </div>
+  </footer>
+        <script> 
+        
+var responsiveZoom = (window.innerWidth < 768) ? 6.75 : 7.75;
+
+function initMap() {
+  var myLatlng = new google.maps.LatLng(48.851601,2.356296);
+ 
+    var mapOptions = {
+    styles: [
+      {
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#f5f5f5"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.country",
+        "elementType": "geometry.stroke",
+        "stylers": [
+          {
+            "color": "#00338D"
+          },
+          {
+            "visibility": "on"
+          },
+          {
+            "weight": 2
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+           "color": "#bdbdbd"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#ffffff"
+          }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#dadada"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#bbdefb"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      }
+    ],
+    zoom: responsiveZoom,
+    minZoom: 10.5,
+    maxZoom: 37,
+    zoomControl: true,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.DEFAULT
+    },
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false,
+    panControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    overviewMapControl: false,
+    rotateControl: false
+  };
+  var map = new google.maps.Map(
+    document.getElementById("map-canvas"),
+    mapOptions
+  );
+
+  // BANMBOKIT
+  var markerGPBANMBOKIT = new google.maps.Marker({
+    position: new google.maps.LatLng(48.8935298,2.3848094),
+    map: map,
+    title: "Click here for BANMBOKIT Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPBANMBOKIT, "click", function() {
+    hideInfo();
+    showInfo(".BANMBOKIT");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  // Bokit'Aw
+
+  var markerGPBokitAw = new google.maps.Marker({
+    position: new google.maps.LatLng(48.8946878,2.352538),
+    map: map,
+    title: "Click here for BokitAw Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPBokitAw, "click", function() {
+    hideInfo();
+    showInfo(".BokitAw");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  // BokitFactory
+  var markerGPBokitFactory = new google.maps.Marker({
+    position: new google.maps.LatLng(48.8422681,2.2805115),
+    map: map,
+    title: "Click here for BokitFactory Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPBokitFactory, "click", function() {
+    hideInfo();
+    showInfo(".BokitFactory");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  // LAngeBokits
+  var markerGPLAngeBokits = new google.maps.Marker({
+    position: new google.maps.LatLng(48.809126,2.34277),
+    map: map,
+    title: "Click here for LAngeBokits Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPLAngeBokits, "click", function() {
+    hideInfo();
+    showInfo(".LAngeBokits");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  // BokitandCo
+  var markerGPBokitandCo = new google.maps.Marker({
+    position: new google.maps.LatLng(48.8024473,2.2860547),
+    map: map,
+    title: "Click here for BokitandCo Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPBokitandCo, "click", function() {
+    hideInfo();
+    showInfo(".BokitandCo");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+  
+ // KINGBOKIT
+ var markerGPKINGBOKIT = new google.maps.Marker({
+    position: new google.maps.LatLng(48.935199,2.4281858),
+    map: map,
+    title: "Click here for KINGBOKIT Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPKINGBOKIT, "click", function() {
+    hideInfo();
+    showInfo(".KINGBOKIT");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  // LîleauxBokits
+ var markerGPLîleauxBokits = new google.maps.Marker({
+    position: new google.maps.LatLng(48.8493431,2.5822425),
+    map: map,
+    title: "Click here for LîleauxBokits Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPLîleauxBokits, "click", function() {
+    hideInfo();
+    showInfo(".LîleauxBokits");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+   // ManMan
+ var markerGPManMan = new google.maps.Marker({
+    position: new google.maps.LatLng(48.7858737,2.4024036),
+    map: map,
+    title: "Click here for ManMan Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPManMan, "click", function() {
+    hideInfo();
+    showInfo(".ManMan");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+     // ManMan
+ var markerGPManMan = new google.maps.Marker({
+    position: new google.maps.LatLng(48.7858737,2.4024036),
+    map: map,
+    title: "Click here for ManMan Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPManMan, "click", function() {
+    hideInfo();
+    showInfo(".ManMan");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  //             Karibbean Truck
+ var markerGPKaribbeanTruck = new google.maps.Marker({
+    position: new google.maps.LatLng(48.9947334,2.237318),
+    map: map,
+    title: "Click here for KaribbeanTruck Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPKaribbeanTruck, "click", function() {
+    hideInfo();
+    showInfo(".KaribbeanTruck");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+   // Esprit Karaïb
+ var markerGPEspritKaraïb = new google.maps.Marker({
+    position: new google.maps.LatLng(48.6438241,2.3347617),
+    map: map,
+    title: "Click here for EspritKaraïb Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPEspritKaraïb, "click", function() {
+    hideInfo();
+    showInfo(".EspritKaraïb");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+  
+ // Plaisir des Tropiques
+
+ var markerGPTropiques = new google.maps.Marker({
+    position: new google.maps.LatLng(48.9472669,2.2029049),
+    map: map,
+    title: "Click here for Tropiques Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPTropiques, "click", function() {
+    hideInfo();
+    showInfo(".Tropiques");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+   // Kaaz Bokit
+
+
+ var markerGPKaaz = new google.maps.Marker({
+    position: new google.maps.LatLng(48.9494623,2.6017717),
+    map: map,
+    title: "Click here for Kaaz Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPKaaz, "click", function() {
+    hideInfo();
+    showInfo(".Kaaz");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  // NAMUR
+  var markerGPNamur = new google.maps.Marker({
+    position: new google.maps.LatLng(50.463110, 4.867437),
+    map: map,
+    title: "Click here for Namur Grand-Place details",
+    icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  });
+  google.maps.event.addListener(markerGPNamur, "click", function() {
+    hideInfo();
+    showInfo(".namur");
+    map.panTo(this.getPosition());
+    map.setZoom(16);
+  });
+
+  // back to offices overview
+  document.querySelector("#map-overview").addEventListener("click", function() {
+    map.panTo(myLatlng);
+    map.setZoom(responsiveZoom);
+    hideInfo();
+  });
+  
+  window.addEventListener("resize", function() {
+    if (window.innerWidth < 768) responsiveZoom = 6.75
+    else if (window.innerWidth > 768) responsiveZoom = 7.75
+    map.setZoom(responsiveZoom);
+  });
+}
+
+function showInfo(selector) {
+  document.querySelector(selector).classList.add("shown");
+  document.querySelector("#map-canvas").classList.add("zoomed");
+  document.querySelector("#map-overview").classList.remove("hidden");
+}
+
+function hideInfo() {
+  if (document.querySelector(".shown")) {
+    document.querySelector(".shown").classList.remove("shown");
+  }
+  document.querySelector("#map-canvas").classList.remove("zoomed");
+  document.querySelector("#map-overview").classList.add("hidden");
+}
+
+        </script>
+       <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+<script src="assets/js/main copy.js"></script>
+<script src="assets/js/main copy 3.js"></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

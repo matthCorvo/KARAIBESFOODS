@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/resto.css">
+
+        <title>KARAÏBES FOODS</title>
+    </head>
+    <body>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class='bx bx-chevron-up scrolltop__icon'></i>
+  </a>
+                                      <!--1er NAV BAR TOP-->
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style=" width: 100%; height: 50px;">
+  <div class="container">
+  
+  <div class="navbar-text register">
+      <section class="color-1">
+      <nav class="cl-effect-1 ">
+  
+            <button class="nav1 btn btn-sm my-2 my-sm-0" type="submit" ><a href="InscriptionRestaurant.html" target="_blank" >Inscrire un restaurateur</a></button>
+            | 
+            <!--boutton pour S'identifier-->
+            <a  href="#" title="Register"  data-toggle="modal" data-target="#signinPage" style=" text-decoration: none;" >S'identifier <i class="fas fa-user-plus"></i></a> 
+            / 
+            <!--boutton pour S'inscrire-->
+  
+            <a  href="#" title="Login" data-toggle="modal" data-target="#signupPage" style="text-decoration: none;">S'inscrire <i class="fas fa-sign-in-alt"></i></a>
+            <form>
+  <!--MODAL Page pour S'identifier-->
+            <div class="modal fade" id=signupPage>
+            <div class="modal-dialog">
+            <div class="modal-content">
+  
+              <div class="modal-header text-center">
+              <h4 class="modal-title text-center w-100 font-weight-bold">Inscription</h4>
+              <button type="button" class="close" data-dismiss="modal" arial-label="Close">&times;</button>
+              </div>
+              <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+  <i class="fas fa-user prefix grey-text"></i>                                            
+                        <label data-error="wrong" data-success="right">Ton nom</label>
+                      <input type="text" class="form-control validate" placeholder="mete nom Aw*"required>
+                      </div>
+  
+                      <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>                                           
+                        <label data-error="wrong" data-success="right">Ton e-mail</label>
+                      <input type="email" class="form-control validate" placeholder="monemail@gmail.com"required>
+                      </div>
+  
+                      <div class="md-form mb-5">
+                        <i class="fas fa-lock prefix grey-text"></i>                                          
+                        <label data-error="wrong" data-success="right">Ton mot de passe</label>
+                        <input type="password" class="form-control validate " placeholder="**************" required>
+                      </div>
+                    </div>
+                
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button class="btn btn-success">S'inscrire</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+              <!-- S'inscrire modal page-->
+              <form>
+                  <div class="modal fade" id="signinPage">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+  
+                        <div class="modal-header text-center"> 
+                          <h3 class="modal-title w-100 dark-grey-text font-weight-bold">S'identifier</h3>
+                          <button type="button" class="close" data-dismiss="modal" arial-label="Close">&times;</button>
+                        </div>
+  
+                        <div class="modal-body mx-4">
+                          <div class="md-form ">
+                            <label data-error="wrong" data-success="right">Ton e-mail</label>
+                        <input type="email" class="form-control validate " placeholder="monemail@gmail.com"required>
+                        </div>
+  
+                        <div class="md-form "style="margin-top: 2%;">
+                          <label data-error="wrong" data-success="right">Ton mot de passe</label>
+                          <input type="password" class="form-control validate " placeholder="**************" required>
+                          <p class="font-small green-text d-flex justify-content-center"><a href="#" style="color:blue;">Mot de passe oublier?</a></p>
+                        </div>
+  
+                        <div class="text-center mb-3" style="margin-top: 5%;">
+                          <button class="btn btn-success btn-block z-depth-la">S'identifier</button>
+                        </div>
+                          <p class="font-small dark-grey-text d-flex justify-content-center">Ou identifier vous avec:</p>
+                        <div class="row my-3 justify-content-center">
+                          
+                          <button type="button" class="btn btn-primary z-depth-la" style="margin: 5px;"><i class="fab fa-facebook-f text-center"></i></button>
+  
+                          <button type="button" class="btn btn-link z-depth-la" style="border: 3px solid gray;margin: 5px;"><i class="fab fa-twitter text-center"></i></button>
+  
+                          <button type="button" class="btn btn-danger z-depth-la" style="margin: 5px;"><i class="fab fa-google-plus-g text-center"></i></button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+  
+                        </nav>
+                </section>
+            </div>                
+  </nav>
+  
+                <!-- 2eme NAV BAR menu-->
+    
+                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                  <i class='bx navbar-brand bx-moon change-theme' id="theme-button"></i>
+                  <a class="navbar-brand" href="index.html"><span class="logo"><b>KARAÏBES</b></span><span  class="logo1">Foods</span></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>    
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">    
+                    <ul class="navbar-nav mr-auto " style="margin-left: 20%;">
+                      <li class="nav-item active">
+                        <a class="btn navbar-brand btn-light " href="Resto.html" >
+                          Réstaurateurs    <span style="color:green;"><i class="fas fa-utensils"></i>        </span>    </a>
+                        </li>
+                        <li class="nav-item">        
+                          <a   class="navbar-brand btn  btn-light " href="Carte.html" >La Carte<span style="color:green;"> <i class="fas fa-globe-africa"></i></span></a>
+                        </li>
+                        <li class="nav-item">        
+                          
+                          <a class="btn  btn-light navbar-brand" href="Apropos.html" >A propos  <i  style="color: orangered;" class="far fa-question-circle"></i></a>
+                        </li>
+                  </div>
+                      </ul>
+              
+              </div>
+                </nav>
+                     
+                      </div>
+                  </div>
+  
+
+              
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class = "menu" id="menu">
+                <div class = "menu-container">
+                  <div class = "menu-head">
+                    <h2>Retrouver tous vos réstaurateurs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium porro tempora aliquid officiis voluptate necessitatibus minus obcaecati. Quod perferendis numquam dignissimos odio nobis asperiores!</p>
+                  <center>
+                    <div class="input-group " style="width:50%;">
+                            <input type="text"  class="form-control" placeholder="Cuisine, nom de restaurant...">
+                            <div class="input-group-append">
+                              <button class="btn btn-success" type="button">
+                              Annou ay !*
+                              </button>
+                            </div>
+                          </div>
+                        </center>
+                  </div>
+          
+                  <div class = "menu-btns">
+                    <button type = "button" class = "menu-btn active-btn" id = "featured">Food-trucks</button>
+                    <button type = "button" class = "menu-btn" id = "today-special">Réstaurants</button>
+                    <button type = "button" class = "menu-btn" id = "new-arrival">Traiteurs</button>
+                   
+                    <div class="select-wrp" >
+                      <select data-placeholder="Choose Location">
+                          <option >Iles-de-France </option>
+                          <option>PARIS (75)</option>
+                          <option>SEINE-ET-MARNE (77)</option>
+                          <option>YVELINES (78)</option>
+                          <option>ESSONES (91)</option>
+                          <option>HAUT-DE-SEINE (92)</option>
+                          <option>SEINE-SAINT-DENIS(93)</option>
+                          <option>VAL-DE-MARNE (94)</option>
+                          <option>VAL D'OISE (95)</option>
+                      </select>
+                  </div>
+                     
+                  </div>
+          
+                  <div class = "food-items">
+                    <!-- item -->
+                    <div class = "food-item new-arrival">
+                      <div class = "food-img">
+
+                        <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/p720x720/136965207_1871778156312470_2124707015949610151_o.jpg?_nc_cat=103&ccb=2&_nc_sid=110474&_nc_ohc=sLUMHD00R0YAX8ZFZ3e&_nc_ht=scontent-cdt1-1.xx&tp=6&oh=1ef15a8e107c7a257cc9bf74170bc3fe&oe=603354FF" alt="BANM BOKIT"  >
+                      </div>
+                      <div class = "food-content">
+                        
+                        <p class = "category">Categories: <span>Traiteur, Réstaurant</span></p>
+                        <h2 class = "food-name" style="color:orangered">BANM BOKIT</h2>
+                        <ul class = "rating">
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "far fa-star"></i></li>
+                        </ul>
+                        <div class = "line"></div>
+                        <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price">20 Rue Barbanègre, 75019 Paris</h5></a>
+                        <a href="#" class="btn btn-success">plus d'informations</a>                      
+                      </div>
+                    </div>
+                    <!-- end of item -->
+          
+                    <div class = "food-item today-special">
+                      <div class = "food-img">
+                        <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/99289308_2752043008258500_2043616710124109824_o.jpg?_nc_cat=108&ccb=2&_nc_sid=2d5d41&_nc_ohc=cBFCfX8aY_oAX_uY1K9&_nc_ht=scontent-cdg2-1.xx&tp=6&oh=123cf4b35ace652b33e767ece741b8eb&oe=603246A2" alt="BANM BOKIT"  >
+                      </div>
+                      <div class = "food-content">
+                        <p class = "category" >Categories: <span> Réstaurant</span></p>
+
+                        <h2 class = "food-name" style="color:orangered">Bokit'Aw</h2>
+                        <ul class = "rating">
+                        
+                          <li ><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "far fa-star"></i></li>
+                        </ul>
+                        <div class = "line"></div>
+                       <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price">52 Rue Boinod, 75018 Paris</h5></a>
+                        <a href="#" class="btn btn-success">plus d'informations</a>
+                      </div>
+                    </div>
+                    <!-- end of item -->
+          
+          
+                    <!-- item -->
+                    <div class = "food-item today-special">
+                      <div class = "food-img">
+                        <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/118307907_791391001601651_8032866883784293786_o.jpg?_nc_cat=108&ccb=2&_nc_sid=9267fe&_nc_ohc=U5rxtQxqGN4AX_QAMSb&_nc_ht=scontent-cdg2-1.xx&oh=d3686159263f767ee0c1bf3784c9656d&oe=603200BF" alt="BANM BOKIT"  >
+                      </div>
+                      <div class = "food-content">
+                        <p class = "category" >Categories: <span> Réstaurant</span></p>
+
+                        <h2 class = "food-name" style="color:orangered">Bokit Factory</h2>
+                        <ul class = "rating">
+                        
+                          <li ><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "far fa-star"></i></li>
+                        </ul>
+                        <div class = "line"></div>
+                       <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price">58 Rue des Bergers, 75015 Paris</h5></a>
+                        <a href="#" class="btn btn-success">plus d'informations</a>
+                      </div>
+                    </div>
+                    <!-- end of item -->
+                    <!-- end of item -->
+          
+                    <!-- item -->
+                    <div class = "food-item featured">
+                      <div class = "food-img">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMuDt674_077jJ1M8FCav6e9D7FSLZaZK7hhvyE=w408-h306-k-no" alt="BANM BOKIT"  >
+                      </div>
+                      <div class = "food-content">
+                        <p class = "category" >Categories: <span> Food-truck</span></p>
+
+                        <h2 class = "food-name" style="color:orangered">L'Ange Bokits</h2>
+                        <ul class = "rating">
+                        
+                          <li ><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "far fa-star"></i></li>
+                        </ul>
+                        <div class = "line"></div>
+                       <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price">115-117 Avenue Raspail Devant le Parc du Coteau, 94250 Gentilly</h5></a>
+                        <a href="#" class="btn btn-success">plus d'informations</a>
+                      </div>
+                    </div>
+                    <!-- end of item -->
+
+          
+                         <!-- item -->
+                         <div class = "food-item featured">
+                          <div class = "food-img">
+                            <img src="https://lh5.googleusercontent.com/p/AF1QipPI14W8R0Qtse7gJWTB-wftf7RuHAbSMvacO96X=w234-h144-p-k-no" alt="BANM BOKIT"  >
+                          </div>
+                          <div class = "food-content">
+                            <p class = "category" >Categories: <span> Food-truck</span></p>
+    
+                            <h2 class = "food-name" style="color:orangered">Bokit and Co</h2>
+                            <ul class = "rating">
+                            
+                              <li ><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "far fa-star"></i></li>
+                            </ul>
+                            <div class = "line"></div>
+                           <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price">170 Avenue de Verdun, 92320 Châtillon</h5></a>
+                            <a href="#" class="btn btn-success">plus d'informations</a>
+                          </div>
+                        </div>
+                        <!-- end of item -->
+          
+                        <div class = "food-item today-special">
+                          <div class = "food-img">
+                            <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/s960x960/81753100_502887080331629_5879082815382880256_o.jpg?_nc_cat=111&ccb=2&_nc_sid=110474&_nc_ohc=zCd-YnkS5ZgAX--zDqV&_nc_ht=scontent-cdg2-1.xx&tp=7&oh=943debf7ba9303026722725936c85dc1&oe=602F8BF7" alt="BANM BOKIT"  >
+                          </div>
+                          <div class = "food-content">
+                            <p class = "category" >Categories: <span> Réstaurant</span></p>
+    
+                            <h2 class = "food-name" style="color:orangered">KING BOKIT</h2>
+                            <ul class = "rating">
+                            
+                              <li ><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "far fa-star"></i></li>
+                            </ul>
+                            <div class = "line"></div>
+                           <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price"> 7 Rue Edgar Quinet, 93350 Le Bourget</h5></a>
+                            <a href="#" class="btn btn-success">plus d'informations</a>
+                          </div>
+                        </div>
+                        <!-- end of item -->
+          
+                        <div class = "food-item today-special">
+                          <div class = "food-img">
+                            <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/p960x960/118362768_3852780148082098_3349045054474574455_o.jpg?_nc_cat=104&ccb=2&_nc_sid=2d5d41&_nc_ohc=cdh23x9qMDMAX_IJvdM&_nc_oc=AQlSjh1-Gf3KEH7wsil0FtPwTREpvNX_D40fP3vs2eC0d7x_pBzcDMyjK1iVw38ayXE&_nc_ht=scontent-cdg2-1.xx&tp=6&oh=6cfbeae7e0a89ac1424877594851c19e&oe=60325C7A" alt="BANM BOKIT"  >
+                          </div>
+                          <div class = "food-content">
+                            <p class = "category" >Categories: <span> Réstaurant</span></p>
+    
+                            <h2 class = "food-name" style="color:orangered">L'île aux Bokits</h2>
+                            <ul class = "rating">
+                            
+                              <li ><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "fas fa-star"></i></li>
+                              <li><i class = "far fa-star"></i></li>
+                            </ul>
+                            <div class = "line"></div>
+                           <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price"> 34 Boulevard de Nesles, 77420 Champs-sur-Marne</h5></a>
+                            <a href="#" class="btn btn-success">plus d'informations</a>
+                          </div>
+                        </div>
+                        <!-- end of item -->
+          
+                    <!-- item -->
+                    <div class = "food-item today-special">
+                      <div class = "food-img">
+                        <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/81906206_1972904346188458_765125793599717376_n.jpg?_nc_cat=106&ccb=2&_nc_sid=110474&_nc_ohc=4qh78bUzlJAAX9Y2EBJ&_nc_ht=scontent-cdt1-1.xx&oh=c5b50ac7d27afacb5234a80a690adb33&oe=6032D745" alt="BANM BOKIT"  >
+                      </div>
+                      <div class = "food-content">
+                        <p class = "category" >Categories: <span> Réstaurant</span></p>
+
+                        <h2 class = "food-name" style="color:orangered">Chez Les Filles à ManMan'S                        </h2>
+                        <ul class = "rating">
+                        
+                          <li ><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "far fa-star"></i></li>
+                        </ul>
+                        <div class = "line"></div>
+                       <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price">  55 Avenue la Bruyère, 94400 Vitry-sur-Seine</h5></a>
+                        <a href="#" class="btn btn-success">plus d'informations</a>
+                      </div>
+                    </div>
+                    <!-- end of item -->
+                    <!-- end of item -->
+          
+                     <!-- item -->
+                     <div class = "food-item today-special">
+                      <div class = "food-img">
+                        <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/128580051_1201970963530616_7913177357274147839_o.jpg?_nc_cat=105&ccb=2&_nc_sid=a26aad&_nc_ohc=8o3fgPOhAXUAX96FsPT&_nc_ht=scontent-cdt1-1.xx&oh=f3d156bb99912f3535761d81b767d74e&oe=602FE48C" alt="BANM BOKIT"  >
+                      </div>
+                      <div class = "food-content">
+                        <p class = "category" >Categories: <span> Réstaurant</span></p>
+
+                        <h2 class = "food-name" style="color:orangered"> Karibbean Truck                      </h2>
+                        <ul class = "rating">
+                        
+                          <li ><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "far fa-star"></i></li>
+                        </ul>
+                        <div class = "line"></div>
+                       <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price"> 91b Rue de la Station, 95130 Franconville</h5></a>
+                        <a href="#" class="btn btn-success">plus d'informations</a>
+                      </div>
+                    </div>
+                    <!-- end of item -->
+                       <!-- item -->
+                       <div class = "food-item today-special">
+                        <div class = "food-img">
+                          <img src="http://www.restaurant-antillais-91.fr/img/plat/767-recette-de-bokit-702x336.jpg" alt="BANM BOKIT"  >
+                        </div>
+                        <div class = "food-content">
+                          <p class = "category" >Categories: <span> Réstaurant</span></p>
+  
+                          <h2 class = "food-name" style="color:orangered"> Esprit Karaïb - restaurant antillais 91                  </h2>
+                          <ul class = "rating">
+                          
+                            <li ><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "far fa-star"></i></li>
+                          </ul>
+                          <div class = "line"></div>
+                         <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price"> 61 Route de Corbeil, 91700 Sainte-Geneviève-des-Bois</h5></a>
+                          <a href="#" class="btn btn-success">plus d'informations</a>
+                        </div>
+                      </div>
+                      <!-- end of item -->
+          
+                    <!-- item -->
+                    <div class = "food-item new-arrival">
+                      <div class = "food-img">
+
+                        <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/103391344_1949616691838712_6898699765831953864_n.jpg?_nc_cat=105&ccb=2&_nc_sid=8bfeb9&_nc_ohc=L7AVdR2bqAUAX-6vvXS&_nc_ht=scontent-cdt1-1.xx&oh=3d865ef0e0d51a75d58e1310ad8398cb&oe=60331CD9" alt="BANM BOKIT"  >
+                      </div>
+                      <div class = "food-content">
+                        
+                        <p class = "category">Categories: <span>Traiteur, Réstaurant</span></p>
+                        <h2 class = "food-name" style="color:orangered">Plaisir des Tropiques</h2>
+                        <ul class = "rating">
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "fas fa-star"></i></li>
+                          <li><i class = "far fa-star"></i></li>
+                        </ul>
+                        <div class = "line"></div>
+                        <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price">15 Rue d'Estienne d'Orves, 78500 Sartrouville</h5></a>
+                        <a href="#" class="btn btn-success">plus d'informations</a>                      
+                      </div>
+                    </div>
+                    <!-- end of item -->
+                    <!-- end of item -->
+           <!-- item -->
+           <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src="https://lh5.googleusercontent.com/p/AF1QipNUl5AZLrPmtkCYTZX6IPFPyfjiurGYRNRjc5mb=w400-h300-k-no" alt="BANM BOKIT"  >
+            </div>
+            <div class = "food-content">
+              <p class = "category" >Categories: <span> Réstaurant</span></p>
+
+              <h2 class = "food-name" style="color:orangered"> Kaaz Bokit                 </h2>
+              <ul class = "rating">
+              
+                <li ><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "fas fa-star"></i></li>
+                <li><i class = "far fa-star"></i></li>
+              </ul>
+              <div class = "line"></div>
+             <a href="Carte.html"style="color:green;text-decoration:none;"> <h5 class = "food-price"> 125 Avenue Charles Gide, 77270 Villeparisis</h5></a>
+              <a href="#" class="btn btn-success">plus d'informations</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          
+                  </div>
+                </div>
+              </section>
+          
+              
+      
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">Speciale salades</span>
+                <h2 class="section-title">Menu de la semaine</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salade barbecue</h3>
+                        <span class="menu__detail">Réstaurant</span>
+                        <span class="menu__preci">9.90€</span>
+                        <a href="#" class="button menu__button"><i class="fas fa-store-alt"></i></a>
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salade de poisson
+                        </h3>
+                        <span class="menu__detail">Réstaurant</span>
+                        <span class="menu__preci">9.90€</span>
+                        <a href="#" class="button menu__button"><i class="fas fa-store-alt"></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salade d'épinards
+                        </h3>
+                        <span class="menu__detail">Réstaurant</span>
+                        <span class="menu__preci">9.90€</span>
+                        <a href="#" class="button menu__button"><i class="fas fa-store-alt"></i></a>
+                    </div>
+                </div>
+         </div>
+            </section>
+            <section class="about section bd-container" id="about">
+              <div class="about__container  bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial" style="font-size: 30px;">Êtes-vous un restaurateur ?  </span>
+                      <h2 class="section-title about__initial">Inscrivez votre restaurant
+                          </h2>
+                    
+                    
+                      <p class="about__description">Donnez-nous plus de détails, et nous vous contacterons le plus rapidement possible
+      
+                          .</p>
+                   
+                          <a href="InscriptionRestaurant.html" target="_blank" class="btn btn-success my-2 my-sm-0" type="submit" style="color: white;">Inscrire un restaurateur</a>
+      
+                      
+      
+                    </div>
+                  
+                  <img src="assets/img/about.jpg" alt="" class="about__img">
+                  
+                
+              
+                  
+                     
+                  </div>
+              
+          </section>
+           <!--========== CONTACT US ==========-->
+           
+
+         <!--========== FOOTER ==========-->
+         <footer class="footer section bd-container">
+          <div class="footer__container bd-grid">
+              <div class="footer__content">
+                  <a href="#" class="footer__logo">                    
+        <span class="logo"><b>KARAÏBES</b></span><span  class="logo1">Foods</span>
+                  </a>
+                  <span class="footer__description">Restaurants · Food-trucks · Traiteurs</span>
+                  <div>
+                      <a href="https://github.com/matthCorvo/KARAIBESFOODS" class="footer__social" target="_blank"><i class="fab fa-github-square"></i></a>
+                      <a href="https://matthcorvo.github.io/Instagrampro/" class="footer__social" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                      <a href="https://www.linkedin.com/in/corvomatthieu/" class="footer__social" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://twitter.com/CodeMatth" class="footer__social" target="_blank"><i class="fab fa-twitter-square"></i></a>
+
+                    </div>
+              </div>
+
+              <div class="footer__content">
+                  <h3 class="footer__title">Services</h3>
+                  <ul>
+                      <li><a href="Carte.html" class="footer__link">Géolocalisation</a></li> 
+                      <li><a href="#" class="footer__link">Promotions</a></li>
+                      <li><a href="#" class="footer__link">Appréciations</a></li>
+                      <li><a href="InscriptionRestaurant.html" class="footer__link">Inscrire un restaurateur</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer__content">
+                  <h3 class="footer__title">Informations</h3>
+                  <ul>
+                      <li><a href="Apropos.html" class="footer__link">F.A.Q</a></li>
+                      <li><a href="Apropos.html" class="footer__link">Contact </a></li>
+                      <li><a href="Mentionslégales.pdf" class="footer__link">Mention Légal</a></li>
+                      <li><a href="CGU.pdf" class="footer__link">CGU</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer__content">
+                  <h3 class="footer__title">Adresses</h3>
+                  <ul>
+                      <li>Montreal - Tokyo</li>
+                      <li>Paris - Sainte-Lucie</li>
+                      <li>999 - 888 - 777</li>
+                      <li><a href="mailto:Karaïbesfoods@email.com"> Karaïbesfoods@email.com</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer__copy">
+          <div class="lang" ></div> <a href="#" > EN</a> | <div class="langfr"></div> <a href="#" >FR </a>| <div class="langes"></div><a href="#"> ES</a> |<div class="langcr"></div><a href="#" > CR  </a >           
+
+          <p >&#169; <script>document.write(new Date().getFullYear());</script> Matthieu Corvo. All right reserved <!--<a href="https://icons8.com/icon/daZJsegJaIOE/uber-eats">Uber Eats icon by Icons8--></a></p>
+      </div>
+      </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+<script src="assets/js/main copy 2.js"></script>
+<script src="assets/js/main copy.js"></script>
+
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
