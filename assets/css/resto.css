@@ -121,8 +121,8 @@
 #menu .category span{
   font-weight: 500;
 }
-@media (max-width: 430px) {
-  .menu-btns p{font-size:10px;}
+@media (max-width: 399px) {
+  .menu-btns p{font-size:9px;}
 }
 @media screen and (min-width: 600px){
   #menu .food-item{
