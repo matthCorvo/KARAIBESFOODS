@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karaïbes foods</title>
+
+   <!-- FavIcon -->
+
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favico/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favico/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favico/favicon-16x16.png">
+   <link rel="manifest" href="img/favico/site.webmanifest">
+   <link rel="mask-icon" href="img/favico/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css'>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Style.css -->
+ <link rel="stylesheet" href="css/style2.css">
+ <link rel="stylesheet" href="css/modal.css">
+ <link rel="stylesheet" href="css/inscription.css">
+ <link rel="stylesheet" href="css/Restaurateurs.css">
+ <link rel="stylesheet" href="css/loading.css">
+ <link rel="stylesheet" href="css/CGU.css">
+
+</head>
+<body>
+ <div class="loader loader--active">
+   <div class="loader__icon">
+     <div class='pin'></div>
+     <div class='pulse'></div>
+   </div>
+   <div class="loader__tile"></div>
+   <div class="loader__tile"></div>
+   <div class="loader__tile"></div>
+   <div class="loader__tile"></div>
+   <div class="loader__tile"></div>
+ </div>
+ <!-- Navbar -->
+ <nav class="navbar  navbar-expand-lg  py-3 shift" style="background-color:#fff" >
+   <div class="container">
+   <a class="navbar-brand" href="index.html">
+     <img src="img/LogoMakr-2vt1Of.png" width="120" height="50" alt="">
+   </a>
+   <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+ 
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav ml-auto" >
+       <li class="nav-item active">
+         <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+       </li>
+      
+       <li class="nav-item ">
+         <a class="nav-link " href="Restaurateurs2.html"> Restaurateurs          </a>
+       </li>
+ 
+       <li class="nav-item ">
+         <a class="nav-link " href="Map2.html"> Localisations          </a>
+       </li>
+ 
+         <li class="nav-item ">
+          <a class="nav-link" href="Inscription2.html">Inscription </a>
+        </li>
+        
+          <li class="nav-item ">
+            <a class="nav-link btn-default" href="#"   data-toggle="modal" data-target="#myModal" ><i class="fas fa-user-circle" style="margin-right:2.5px;"></i>Mon compte </a>
+         
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div id="login" class="modal-content">   
+       <div class="flip">
+         <div class="form-signup">
+           <h1>Créer un compte</h1>
+           <fieldset>
+             <form>
+               <input type="email" placeholder="Entrez votre adresse email" required />
+               <input type="password" placeholder="Créer un mot de passe" required />
+               <input type="text" placeholder="Créer un pseudo" required />
+               <input type="submit" value="S'inscrire" />
+             </form>
+             <p>Ou inscrivez-vous avec:<br> <span class="social fb"><i class="fab fa-facebook fa-3x"></i></span> <span class="social gp"><i class="fab fa-google-plus fa-3x"></i></span></p>
+             <a href="#" class="flipper">Déjà inscrit ? Connexion.</a>
+           </fieldset>
+         </div>
+         <div class="form-login">
+           <h1>Connexion</h1>
+           <fieldset>
+             <form>
+               <input type="email" placeholder="Entrez votre adresse email" required />
+               <input type="password" placeholder="Créer un mot de passe" required />
+               <input type="submit" value="Connexion" />
+             </form>
+             <p>Ou connectez-vous en utilisant :<br> <span class="social fb"><i class="fab fa-facebook fa-3x"></i></span> <span class="social gp"><i class="fab fa-google-plus fa-3x"></i></span></p>
+             <a href="#" class="flipper">Pas inscrit ? Créer un compte.</a><br>
+             <a href="#">Mot de passe oublié?</a>
+           </fieldset>
+         </div>
+       </div>
+   
+   
+   </div>
+ </div>
+</div>
+           </li>
+         
+     </ul>
+   </div>
+   </div>
+ </nav>
+
+ <section>
+<div class="S9tc-">
+    <br>
+    <h4 style="text-align: justify;"><strong><a href="#MentionsLegales">A.  Mentions Légales</a></strong></h4>
+
+    <h4 style="text-align: justify;"><strong><a href="#ConditionsdUtilisation">B.  Conditions d’Utilisation</a></strong></h4>
+
+
+    <br>
+    <h1 id="MentionsLegales" style="text-align: justify;"><strong>
+            A.  MENTIONS LEGALES</strong></h1>
+            <p style="text-align: justify;"> 
+                Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la
+                Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des Utilisateurs du site<a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a>les présentes mentions légales.</p>
+
+                <h2 style="text-align: justify;"><strong>ARTICLE 1 : L’éditeur
+                </strong></h2>
+                <p style="text-align: justify;"> 
+                    L’édition et la direction de la publication du site <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a> est
+                    assurée par matthieu Corvo, domiciliée Paris, dont le numéro de téléphone est _______________, et
+                    l'adresse e-mail karaïbesfoods@email.com.
+                    La personne est assujetie au RCS avec le numéro d'inscription _______________ et le numéro de TVA
+                    _______________
+                    </p>
+
+                    <h2 style="text-align: justify;"><strong>ARTICLE 2 : L’hébergeur
+                    </strong></h2>
+                    <p style="text-align: justify;"> 
+                        L'hébergeur du site <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a> est la Société Github, dont le siège
+                        social est situé au _______________ , avec le numéro de téléphone : _______________.
+                        
+                        </p>
+
+                        <h2 style="text-align: justify;"><strong>ARTICLE 3 : Accès au site
+                        </strong></h2>
+                        <p style="text-align: justify;"> 
+                            Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou
+                            non et pouvant découlant d’une nécessité de maintenance.
+                            1
+                            En cas de modification, interruption ou suspension des services le site
+                            <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a>  ne saurait être tenu responsable.
+                            
+                            </p>
+
+                            <h2 style="text-align: justify;"><strong>ARTICLE 4 : Collecte des données    </strong></h2>
+                            <p style="text-align: justify;"> 
+                                Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne
+                                collecte aucune donnée concernant les utilisateurs
+                                </p>
+
+                                <h2 style="text-align: justify;"><strong>ARTICLE 5 : Cookies </strong></h2>
+                                <p style="text-align: justify;"> 
+                                    L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur
+                                    son logiciel de navigation.
+                                    En naviguant sur le site, il les accepte.
+                                    Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations
+                                    relatives à la navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par
+                                    l’intermédiaire des paramètres figurant au sein de son logiciel de navigation
+                                    </p>
+
+                                    <h2 style="text-align: justify;"><strong>ARTICLE 6 : Propriété intellectuelle
+                                    </strong></h2>
+                                    <p style="text-align: justify;"> 
+                                        Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site
+                                        <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a>, sans autorisation de l’Editeur est prohibée et pourra
+                                        entraînée des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété
+                                        intellectuelle et le Code civil.
+                                        Pour plus d’informations, se reporter aux CGU du site<a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a>
+                                        accessible à la rubrique« CGU »
+                                        </p>
+
+                    <p style="text-align: justify;"><br></p><h1 id="ConditionsdUtilisation" style="text-align: justify;"><strong>B. CONDITIONS D'UTILISATION</strong></h1>
+                    <p style="text-align: justify;">     En vigueur au 24/01/2021
+                    </p>
+                    <p style="text-align: justify;">Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet l'encadrement juridique des
+                        modalités de mise à disposition du site et des services par _______________ et de définir les conditions
+                        d’accès et d’utilisation des services par « l'Utilisateur ».
+                        Les présentes CGU sont accessibles sur le site à la rubrique «CGU».
+                        Toute inscription ou utilisation du site implique l'acceptation sans aucune réserve ni restriction des présentes
+                        CGU par l’utilisateur. Lors de l'inscription sur le site via le Formulaire d’inscription, chaque utilisateur
+                        accepte expressément les présentes CGU en cochant la case précédant le texte suivant : « Je reconnais avoir
+                        lu et compris les CGU et je les accepte ».
+                        En cas de non-acceptation des CGU stipulées dans le présent contrat, l'Utilisateur se doit de renoncer à
+                        l'accès des services proposés par le site.
+                        <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a> se réserve le droit de modifier unilatéralement et à tout
+                        moment le contenu des présentes CGU.
+                         </p>
+
+
+                    <p style="text-align: justify;"><br></p>
+                    <h2 style="text-align: justify;"><strong>TITRE 1. Accès au site</strong></h2>
+                        <p style="text-align: justify;">    Le site https://matthcorvo.github.io/KARAIBESFOODS/ permet à l'Utilisateur un accès gratuit aux services
+                            suivants :
+                            Le site internet propose les services suivants :
+                            informations et annuaires de restaurateurs
+                            Le site est accessible gratuitement en tout lieu à tout Utilisateur ayant un accès à Internet. Tous les frais
+                            supportés par l'Utilisateur pour accéder au service (matériel informatique, logiciels, connexion Internet, etc.)
+                            sont à sa charge.
+                            L’Utilisateur non membre n'a pas accès aux services réservés. Pour cela, il doit s’inscrire en remplissant le
+                            formulaire. En acceptant de s’inscrire aux services réservés, l’Utilisateur membre s’engage à fournir des
+                            informations sincères et exactes concernant son état civil et ses coordonnées, notamment son adresse email.
+                            Pour accéder aux services, l’Utilisateur doit ensuite s'identifier à l'aide de son identifiant et de son mot de
+                            passe qui lui seront communiqués après son inscription.
+                            Tout Utilisateur membre régulièrement inscrit pourra également solliciter sa désinscription en se rendant à la
+                            page dédiée sur son espace personnel. Celle-ci sera effective dans un délai raisonnable.
+                            Tout événement dû à un cas de force majeure ayant pour conséquence un dysfonctionnement du site ou
+                            serveur et sous réserve de toute interruption ou modification en cas de maintenance, n'engage pas la
+                            responsabilité de <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a>. Dans ces cas, l’Utilisateur accepte ainsi
+                            ne pas tenir rigueur à l’éditeur de toute interruption ou suspension de service, même sans préavis.
+                            L'Utilisateur a la possibilité de contacter le site par messagerie électronique à l’adresse email de l’éditeur
+                            communiqué à l’ARTICLE 1.</p>
+                            
+                            <p style="text-align: justify;"><br></p>
+                            <h2 style="text-align: justify;"><strong>TITRE 2. Propriété intellectuelle</strong></h2>
+                                <p style="text-align: justify;">   Les marques, logos, signes ainsi que tous les contenus du site (textes, images, son…) font l'objet d'une
+                                    protection par le Code de la propriété intellectuelle et plus particulièrement par le droit d'auteur.
+                                    2
+                                    L'Utilisateur doit solliciter l'autorisation préalable du site pour toute reproduction, publication, copie des
+                                    différents contenus. Il s'engage à une utilisation des contenus du site dans un cadre strictement privé, toute
+                                    utilisation à des fins commerciales et publicitaires est strictement interdite.
+                                    Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l’autorisation
+                                    expresse de l’exploitant du site Internet constituerait une contrefaçon sanctionnée par l’article L 335-2 et
+                                    suivants du Code de la propriété intellectuelle.
+                                    Il est rappelé conformément à l’article L122-5 du Code de propriété intellectuelle que l’Utilisateur qui
+                                    reproduit, copie ou publie le contenu protégé doit citer l’auteur et sa source.</p>
+
+
+                                    <p style="text-align: justify;"><br></p>
+                                    <h2 style="text-align: justify;"><strong>TITRE 3. Responsabilité</strong></h2>
+                                        <p style="text-align: justify;"> Les sources des informations diffusées sur le site  <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a> sont
+                                            réputées fiables mais le site ne garantit pas qu’il soit exempt de défauts, d’erreurs ou d’omissions.
+                                            Les informations communiquées sont présentées à titre indicatif et général sans valeur contractuelle. Malgré
+                                            des mises à jour régulières, le site  <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a> ne peut être tenu
+                                            responsable de la modification des dispositions administratives et juridiques survenant après la publication.
+                                            De même, le site ne peut être tenue responsable de l’utilisation et de l’interprétation de l’information
+                                            contenue dans ce site.
+                                            L'Utilisateur s'assure de garder son mot de passe secret. Toute divulgation du mot de passe, quelle que
+                                            soit sa forme, est interdite. Il assume les risques liés à l'utilisation de son identifiant et mot de passe.
+                                            Le site décline toute responsabilité.
+                                            Le site  <a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a>ne peut être tenu pour responsable d’éventuels
+                                            virus qui pourraient infecter l’ordinateur ou tout matériel informatique de l’Internaute, suite à une utilisation,
+                                            à l’accès, ou au téléchargement provenant de ce site.
+                                            La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et
+                                            insurmontable d'un tiers.</p>
+
+                                            <p style="text-align: justify;"><br></p>
+                                            <h2 style="text-align: justify;"><strong>TITRE 4. Liens hypertextes</strong></h2>
+                                                <p style="text-align: justify;"> Des liens hypertextes peuvent être présents sur le site. L’Utilisateur est informé qu’en cliquant sur ces liens,
+                                                    il sortira du site<a href="https://matthcorvo.github.io/KARAIBESFOODS/" rel="nofollow">https://KARAIBESFOODS.com</a>. Ce dernier n’a pas de contrôle sur les
+                                                    pages web sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu. 
+                                                    
+                                                    </p>
+
+
+                                                    <p style="text-align: justify;"><br></p>
+                                                    <h2 style="text-align: justify;"><strong>TITRE 5. Droit applicable et juridiction
+                                                        compétente
+                                                        </strong></h2>
+                                                        <p style="text-align: justify;"> La législation française s'applique au présent contrat. En cas d'absence de résolution amiable d'un litige né
+                                                            entre les parties, les tribunaux français seront seuls compétents pour en connaître.
+                                                            Pour toute question relative à l’application des présentes CGU, vous pouvez joindre l’éditeur aux
+                                                            coordonnées inscrites à l’ARTICLE 1.
+                                                            </p>
+
+                                                            <p style="text-align: justify;"><br></p>
+                                                            <h2 style="text-align: justify;"><strong>TITRE 6. Collecte des données
+                                                                </strong></h2>
+                                                                <p style="text-align: justify;"> Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la
+                                                                    mesure où il ne collecte aucune donnée concernant les Utilisateurs.
+                                                                    </p>
+
+<!-- partial -->
+<br><br><br><br></section>
+<!-- partial -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3 data-target="#collapse_1">LIENS</h3>
+          <div class="collapse dont-collapse-sm links" id="collapse_1">
+            <ul>
+              <li><a href="Inscription2.html">Ajoutez votre restaurant</a></li>
+              <li><a href="help.html">Aide</a></li>
+              <li><a href="account.html">Mon compte</a></li>
+              <li><a href="Restaurateurs2.html">Wishlist</a></li>
+              <li><a href="Map2.html">Localisation</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 data-target="#collapse_2">Categories</h3>
+          <div class="collapse dont-collapse-sm links" id="collapse_2">
+            <ul>
+              <li><a href="Restaurateurs2.html">Boutiques</a></li>
+              <li><a href="Restaurateurs2.html">Restaurants</a></li>
+              <li><a href="Restaurateurs2.html">Food-Trucks</a></li>
+              <li><a href="Restaurateurs2.html">Traiteurs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 data-target="#collapse_3">Contacts</h3>
+          <div class="collapse dont-collapse-sm contacts" id="collapse_3">
+            <ul>
+              <li><i class="fas fa-home"></i>97845 Baker st. 567<br>Montreal - CN</li>
+              <li><i class="fas fa-mobile-alt"></i>+94 423-23-221</li>
+              <li><i class="far fa-envelope"></i><a href="#0" style="color: #ffffff">info@Karaïbesfoods.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 data-target="#collapse_4">RESTONS EN CONTACT</h3>
+          <div class="collapse dont-collapse-sm" id="collapse_4">
+            <div id="newsletter">
+              <div id="message-newsletter"></div>
+              <form method="post" action="assets/newsletter.php" name="newsletter_form" id="newsletter_form">
+                <div class="form-group">
+                  <input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="Votre email">
+                  <button type="submit" id="submit-newsletter"><i class="fas fa-angle-right"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="follow_us">
+              <h5>SUIVEZ-NOUS</h5>
+              <ul>
+                <li><a href="https://twitter.com/CodeMatth" target="_blank"><img src="./img/twitter_icon.svg" data-src="img/twitter_icon.svg" alt="" class="lazy loaded" data-was-processed="true"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_icon.svg" data-src="img/facebook_icon.svg" alt="" class="lazy loaded" data-was-processed="true"></a></li>
+                <li><a href="https://github.com/matthCorvo/KARAIBESFOODS" target="_blank" style="background:#fff;border-radius: 20%;"><img src="./img/signe-github.svg" data-src="img/instagram_icon.svg" alt="" class="lazy loaded" data-was-processed="true" ></a></li>
+                <li><a href="https://www.linkedin.com/in/corvomatthieu/" target="_blank"style="background:#fff;border-radius: 10%;"><img src="./img/linkedin-svgrepo-com.svg"  data-src="img/facebook_icon.svg" alt="" class="lazy loaded" data-was-processed="true"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /row-->
+      <hr>
+      <div class="row add_bottom_25">
+        <div class="col-lg-6">
+          <ul class="footer-selector clearfix">
+            <li>
+              <div class="styled-select lang-selector" >
+                <select>
+                  <option value="English" selected="" style="color: black;">Anglais</option>
+                  <option value="French" style="color: black;">Francais</option>
+                  <option value="Spanish" style="color: black;">Espagnole</option>
+                  <option value="Russian" style="color: black;">Créole</option>
+                </select>
+              </div>
+            </li>
+           
+            <li><img src="img/cards_all.svg" data-src="img/cards_all.svg" alt="" width="198" height="30" class="lazy loaded" data-was-processed="true"></li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <ul class="additional_links">
+            <li><a href="CGU.html">Conditions générales d'utilisation          </a></li>
+            <li><a href="https://matthcorvo.github.io/CORVOMatthieu-Portfolio-Professionnel-V.3/"><span>© MatthC</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- Button -->
+<div onclick="ScrollTop()" id="top-btn">
+  <i class="fa fa-angle-up"></i>
+</div>
+<!-- -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+<script src="js/slider.js"></script>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- Custom Script -->
+  <script src="js/totop.js"></script>
+  <script src="js/Navbar.js"></script>
+  <script src="js/cookies.js"></script>
+
+</body>
+</html>

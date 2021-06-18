@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karaïbes foods</title>
+    <!-- FavIcon -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favico/favicon-16x16.png">
+  <link rel="manifest" href="img/favico/site.webmanifest">
+  <link rel="mask-icon" href="img/favico/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css'>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/Restaurateurs.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/wishlist.css">
+
+</head>
+<body>
+  <div class="loader loader--active">
+    <div class="loader__icon">
+      <div class='pin'></div>
+      <div class='pulse'></div>
+    </div>
+    <div class="loader__tile"></div>
+    <div class="loader__tile"></div>
+    <div class="loader__tile"></div>
+    <div class="loader__tile"></div>
+    <div class="loader__tile"></div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar  navbar-expand-lg  py-3 shift"  >
+    <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/LogoMakr-2vt1Of.png" width="120" height="50" alt="">
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto" >
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+       
+        <li class="nav-item ">
+          <a class="nav-link " href="Restaurateurs2.html"> Restaurateurs          </a>
+        </li>
+  
+        <li class="nav-item ">
+          <a class="nav-link " href="Map2.html"> Localisations          </a>
+        </li>
+  
+          <li class="nav-item ">
+           <a class="nav-link" href="Inscription2.html">Inscription </a>
+         </li>
+       
+           <li class="nav-item ">
+             <a class="nav-link btn-default" href="#"   data-toggle="modal" data-target="#myModal" ><i class="fas fa-user-circle" style="margin-right:2.5px;"></i>Mon compte </a>
+          
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div id="login" class="modal-content">   
+        <div class="flip">
+          <div class="form-signup">
+            <h1>Créer un compte</h1>
+            <fieldset>
+              <form>
+                <input type="email" placeholder="Entrez votre adresse email" required />
+                <input type="password" placeholder="Créer un mot de passe" required />
+                <input type="text" placeholder="Créer un pseudo" required />
+                <input type="submit" value="S'inscrire" />
+              </form>
+              <p>Ou inscrivez-vous avec:<br> <span class="social fb"><i class="fab fa-facebook fa-3x"></i></span> <span class="social gp"><i class="fab fa-google-plus fa-3x"></i></span></p>
+              <a href="#" class="flipper">Déjà inscrit ? Connexion.</a>
+            </fieldset>
+          </div>
+          <div class="form-login">
+            <h1>Connexion</h1>
+            <fieldset>
+              <form>
+                <input type="email" placeholder="Entrez votre adresse email" required />
+                <input type="password" placeholder="Créer un mot de passe" required />
+                <input type="submit" value="Connexion" />
+              </form>
+              <p>Ou connectez-vous en utilisant :<br> <span class="social fb"><i class="fab fa-facebook fa-3x"></i></span> <span class="social gp"><i class="fab fa-google-plus fa-3x"></i></span></p>
+              <a href="#" class="flipper">Pas inscrit ? Créer un compte.</a><br>
+              <a href="#">Mot de passe oublié?</a>
+            </fieldset>
+          </div>
+        </div>
+    
+    
+    </div>
+  </div>
+</div>
+            </li>
+          
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  
+          
+    <main style="transform: none;" class="">
+      <div class="page_header element_to_stick sticky">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 col-lg-7 col-md-7 d-none d-md-block">
+                  <h1>NOS RESTAURATEURS</h1>
+              </div>
+              <div class="col-xl-4 col-lg-5 col-md-5">
+                <div class="search_bar_list">
+                <input type="text"  class="form-control" placeholder="Nom, ville, code postal">
+                <input type="submit" value="Annou ay!">
+              </div>
+              </div>
+            </div>
+            <!-- /row -->		       
+          </div>
+      </div>
+      <!-- /page_header -->
+     
+    
+      <div class="container margin_30_40" style="transform: none;">			
+        <div class="row" style="transform: none;">
+          <aside class="col-lg-3" id="sidebar_fixed" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+            
+            
+          <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; top: 0px; left: 655px;"><div class="clearfix">
+            <div class="clearfix ">
+              <div class="sort_select">
+                <div id="cart"class="cart__counter">
+                  <i class="fas fa-heart "></i><span class="total-count"></span>
+                </div>
+            
+                </div>
+                
+
+<div class="container1 ">
+  <div class="shopping-cart">
+    <div class="shopping-cart-header">
+      <button type="button"  class="btn save btn-default">Sauvegardé</button>   
+    </div> <!--end shopping-cart-header -->
+
+    <ul class="specific shopping-cart-items">
+      <li class="clearfix">
+        <div class="strip">
+          <figure>
+              <span class="ribbon off">Food-Trucks</span>
+              <img src="img/chick.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+              <a href="http://chicknkreyol.com/" class="strip_info">
+                  <div class="item_title">
+                      <h3>CHICK'N KREYOL</h3>
+                      <small>25 Rue Saint-Denis, 92700 Colombes</small>
+                  </div>
+              </a>
+          </figure>
+          <ul>
+              <li><span class="loc_open">Ouvert</span></li>
+              <li>
+                  <div class="score"> <a href="https://www.facebook.com/chicknkreyol1/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+              </li>
+              <li>
+                <div class="score"> <a href="https://www.instagram.com/chicknkreyol/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+            </li>
+            <li>
+              <div class="score"> <a href="https://www.google.com/maps/place/CHICKNKREYOL/@48.9240282,2.250329,15z/data=!4m5!3m4!1s0x0:0xa08f44a35adb68e5!8m2!3d48.9240282!4d2.250329"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+          </li>
+          </ul>
+      </div>
+      </li>
+
+      <li class="clearfix">
+        <div class="strip">
+          <figure>
+              <span class="ribbon off">Boutiques</span>
+              <img src="https://www.tropicmarche.com/_files/200000000-e8f5de8f60/accestropicmarche2.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+              <a href="https://www.tropicmarche.com/" target="_blank" class="strip_info">
+                  <div class="item_title">
+                      <h3>Tropic Marché                    </h3>
+                      <small>2 Rue du Moutier, 93400 Saint-Ouen</small>
+                  </div>
+              </a>
+          </figure>
+          <ul>
+              <li><span class="loc_open">Ouvert</span></li>
+              <li>
+                  <div class="score"> <a href="https://www.facebook.com/TropicMarche"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+              </li>
+              <li>
+                <div class="score"> <a href="https://www.instagram.com/tropicmarche/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+            </li>
+            <li>
+              <div class="score"> <a href="https://www.google.com/maps/place/Tropic+March%C3%A9/@48.9180956,2.3323493,15z/data=!4m5!3m4!1s0x0:0x182ac37624a381a9!8m2!3d48.9180952!4d2.3323503"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+          </li>
+          </ul>
+      </div>
+         </li>
+
+      <li class="clearfix">
+        <div class="strip">
+          <figure>
+              <span class="ribbon off">Traiteurs</span>
+              <img src="img/GD.jpg" data-src="img/GD.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+              <a href="https://www.gwada-delices.com/" target="_blank" class="strip_info">
+                  <div class="item_title">
+                      <h3>GWADA Delices</h3>
+                      <small>10 Rue des 18 Arpents, 77600 Bussy-Saint-Georges</small>
+                  </div>
+              </a>
+          </figure>
+          <ul>
+              <li><span class="loc_open">Ouvert</span></li>
+              <li>
+                  <div class="score"> <a href="https://www.facebook.com/profile.php?id=100057499306385"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+              </li>
+   
+            <li>
+              <div class="score"> <a href="https://www.google.com/maps/place/Gwada+D%C3%A9lices/@48.8390862,2.7061302,15z/data=!4m2!3m1!1s0x0:0x74e01d7bf828ea7?sa=X&ved=2ahUKEwivrb3svZ7xAhWnxIUKHZ73Bi0Q_BIwFHoECDwQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+          </li>
+          </ul>
+      </div> 
+       </li>
+    </ul>
+
+    <a href="#" class="button clear-cart">Tout effacer</a>
+  </div> <!--end shopping-cart -->
+</div> <!--end container -->
+              </div>
+              <a href="#0" class="open_filters btn_filters"><i class="fas fa-sliders-h"></i><span>Filtres</span></a>
+            </div><div class="filter_col">
+              <div class="inner_bt"><a href="#" class="open_filters"><i class="fas fa-times"></i> </a></div>
+              <div class="filter_type">
+                <div class="flowers-wrap">
+                  <h4><strong>RESTAURATEURS</strong></h4>
+                  <form>
+                    <label><input type="checkbox" name="fl-colour" value="Boutiques" id="Boutiques"  /> <span >Boutiques</span>  </label><br>
+                    <label><input type="checkbox" name="fl-colour" value="Restaurants" id="Restaurants" /> <span >Restaurants</span> </label><br> 
+                    <label><input type="checkbox" name="fl-colour" value="Food" id="Food" /> <span >Food-Trucks</span> </label><br>                     
+                    <label><input type="checkbox" name="fl-colour" value="Traiteurs" id="Traiteurs" /> <span >Traiteurs</span> </label><br>
+
+                  </form>
+                  <hr>
+                  <h4><strong>DEPARTEMENTS</strong></h4>
+                  <form>
+                    <label><input type="checkbox" name="fl-size" value="75" id="75" /> <span >75 - [Paris]</span> </label><br>
+                    <label><input type="checkbox" name="fl-size" value="77" id="77" /><span >77 - [Seine-et-Marne]</span> </label><br>
+                    <label><input type="checkbox" name="fl-size" value="78" id="78" /><span > 78 - [Yvelines]</span> </label><br>
+                    <label><input type="checkbox" name="fl-size" value="91" id="91" /> <span >91 - [Essonne]</span> </label><br> 
+                    <label><input type="checkbox" name="fl-size" value="92" id="92" /><span > 92 - [Hauts-de-Seine]</span> </label><br>
+                    <label><input type="checkbox" name="fl-size" value="93" id="93" /> <span >93 - [Seine-Saint-​Denis]</span> </label><br>
+                    <label><input type="checkbox" name="fl-size" value="94" id="94" /><span > 94 - [Val-de-Marne]</span> </label><br> 
+                    <label><input type="checkbox" name="fl-size" value="95" id="95" /><span > 95 - [Val-d'Oise]</span> </label><br>
+                 
+                  </form>  
+                 
+                </div>
+                
+            </div><div class="resize-sensor" style="position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 330px; height: 1090px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div></div></aside>
+    
+          <div class="col-lg-9">
+            <div class="row flowers">              
+
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+                <div class="strip">
+                  <figure>
+                      <span class="ribbon off">Restaurants</span>
+                      <img src="img/la-creole-montparnasse.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                      <a href="https://la-creole.fr/" target="_blank" class="strip_info">
+                        <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                          <div class="item_title">
+                              <h3>La Créole</h3>
+                              <small>122 Boulevard du Montparnasse, 75014 Paris</small>
+                          </div>
+                      </a>
+                  </figure>
+                  <ul>
+                      <li><span class="loc_open">Ouvert</span></li>
+                      <li>
+                          <div class="score"> <a href="https://www.facebook.com/Creole.Company"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                      </li>
+                      <li>
+                        <div class="score"> <a href="https://www.instagram.com/la_creole_montparnasse/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                    </li>
+                    <li>
+                      <div class="score"> <a href="https://www.google.com/maps/place/La+Cr%C3%A9ole/@48.841293,2.3310846,15z/data=!4m5!3m4!1s0x0:0x1fd727379357d562!8m2!3d48.8413033!4d2.331093"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+                  </li>
+               
+                  </ul>
+              </div>
+                        
+                
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="95  Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Restaurants</span>
+                    <img src="https://www.aljt.com/app/uploads/2018/12/karibbean-food-truck7.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                      <a href="https://www.facebook.com/karibbeantruck/" target="_blank" class="strip_info">
+                        <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>Karibbean Truck       </h3>
+                          <small>91b Rue de la Station, 95130 Franconville</small>
+                      </div>
+                        </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                        <div class="score"> <a href="https://www.facebook.com/karibbeantruck/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                    </li>
+                    <li>
+                      <div class="score"> <a href="https://www.instagram.com/karibbeantruck/"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.google.com/maps/place/Karibbean+Truck/@48.9947334,2.237318,15z/data=!4m2!3m1!1s0x0:0x7ffe342f9bc969f1?sa=X&hl=fr&ved=2ahUKEwi-6umYw57xAhUNtRoKHdcfCxgQ_BIwG3oECFYQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+                </li>
+                </ul>
+            </div>
+                            
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="93 Food" >
+                <div class="strip">
+                  <figure>
+                      <span class="ribbon off">Food-Trucks</span>
+                      <img src="img/kingcreol.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                      <a href="https://king-creoles-food.eatbu.com/?lang=fr#times" target="_blank" class="strip_info">                        <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>KING CREOLE'S FOOD </h3>
+                          <small>Rue Jacques Offenbach 15,
+                            93110 Rosny-sous-Bois
+                            France
+                          </small>
+                      </div>
+                        </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/kingcreolesfood/?ref=page_internal"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.instagram.com/kingcreolesfood_bokit/"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                </li>
+                </ul>
+            </div>
+                            
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="92 Food" >
+                <div class="strip">
+                  <figure>
+                      <span class="ribbon off">Food-Trucks</span>
+                      <img src="img/chick.jpg"  data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                      <a href="http://chicknkreyol.com/" target="_blank" class="strip_info">   
+                                             <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>CHICK'N KREYOL</h3>
+                          <small>25 Rue Saint-Denis, 92700 Colombes</small>
+                      </div>
+                        </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                        <div class="score"> <a href="https://www.facebook.com/chicknkreyol1/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                    </li>
+                    <li>
+                      <div class="score"> <a href="https://www.instagram.com/chicknkreyol/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.google.com/maps/place/CHICKNKREYOL/@48.9240282,2.250329,15z/data=!4m5!3m4!1s0x0:0xa08f44a35adb68e5!8m2!3d48.9240282!4d2.250329"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+                </li>
+        
+                </ul>
+            </div>
+                        
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="93 Traiteurs Boutiques" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Traiteurs / Boutiques</span>
+                    <img src="https://www.tropicmarche.com/_files/200000000-e8f5de8f60/accestropicmarche2.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="https://www.tropicmarche.com/" target="_blank" class="strip_info">
+                                                     <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>Tropic Marché                    </h3>
+                          <small>2 Rue du Moutier, 93400 Saint-Ouen</small>
+                            </div>
+                        </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/TropicMarche"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.instagram.com/tropicmarche/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                </li>
+                <li>
+                  <div class="score"> <a href="https://www.google.com/maps/place/Tropic+March%C3%A9/@48.9180956,2.3323493,15z/data=!4m5!3m4!1s0x0:0x182ac37624a381a9!8m2!3d48.9180952!4d2.3323503"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+              </li>        
+                </ul>
+            </div>
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Restaurants</span>
+                    <img src="https://uploads.lebonbon.fr/source/2018/paris/novembre/45613450_10155998659207218_2680711328221364224_o.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="https://www.caffecreole.com/le-restaurant/" target="_blank" class="strip_info">                                                     <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>Caffé Créole   </h3>
+                          <small>62, boulevard Beaumarchais, 75011 Paris</small>
+                      </div>
+                        </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                        <div class="score"> <a href="https://www.facebook.com/CaffeCreoleParis"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                    </li>
+                    <li>
+                      <div class="score"> <a href="https://www.instagram.com/caffecreole/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.google.com/maps/place/Caff%C3%A9+Cr%C3%A9ole/@48.85791,2.3683793,15z/data=!4m2!3m1!1s0x0:0xff06805af4dd0f38?sa=X&hl=fr&ved=2ahUKEwimpsaXzJ7xAhVKVhoKHWclD8QQ_BIwG3oECGQQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+                </li>
+                </ul>
+            </div>
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Restaurants</span>
+                    <img src="https://www.destinationcocktails.fr/wp-content/uploads/restaurants/384_le_72.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="https://lesoixantedouze.fr/carte.html" target="_blank" class="strip_info">     
+                                                 <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>Le Soixante Douze</h3>
+                          <small>72 Rue du Chevaleret, 75013 Paris</small>                      </div>
+                        </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/Le-Soixante-Douze-1516973678549095/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.instagram.com/lesoixantedouze/"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                </li>
+                <li>
+                  <div class="score"> <a href="https://www.google.com/maps/place/Le+soixante+douze/@48.8309845,2.37473,15z/data=!4m5!3m4!1s0x0:0xcb48c852d5fa465e!8m2!3d48.8309877!4d2.3747349"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+              </li>          
+                  </ul>
+            </div>
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Restaurants</span>
+                    <img src="https://uploads.lebonbon.fr/source/2018/paris/novembre/10495822_904671526218459_2455653790064393645_o_1.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="https://www.bonmangecreole.com/le-restaurant/" target="_blank" class="strip_info">
+                                                       <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>Bon Mangé Créole</h3>
+                          <small>24 Rue Biot, 75017 Paris</small>                      </div>
+                        </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/bonmange75017/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+                <li>
+                  <div class="score"> <a href="https://www.google.com/maps/place/bon+mange+creole/@48.8848422,2.3257543,15z/data=!4m5!3m4!1s0x0:0x879ff7048c57a966!8m2!3d48.884851!4d2.3257767"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+              </li>
+            
+                  </ul>
+            </div>
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Restaurants</span>
+                    <img src="https://larhumerie.com/wp-content/uploads/2019/04/la-rhumerie-visuel-2019-1920x1080-01.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="https://larhumerie.com/" target="_blank" class="strip_info">                                                       <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>La Rhumerie</h3>
+                          <small>166 Boulevard Saint-Germain, 75006 Paris</small>                      </div>
+                                          </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/LaRhumerieParis"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.instagram.com/larhumerieparis/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                </li>
+                <li>
+                  <div class="score"> <a href="https://www.google.com/maps/place/La+Rhumerie/@48.8534117,2.3355093,15z/data=!4m2!3m1!1s0x0:0x6292da72b107a0b5?sa=X&ved=2ahUKEwiCp6vC1p7xAhVHhRoKHYonCyEQ_BIwHXoECGMQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+              </li>
+      
+                  </ul>
+            </div>
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Restaurants</span>
+                    <img src="https://www.auparadistropical.com/i/au-paradis-tropical-359212/3/4/4/2/9/9/1/4/1/6/8/1496398791_186/ae79489781a08a1ab891fbd3b7944b85.clandscape_hd.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="https://www.auparadistropical.com/" target="_blank" class="strip_info">                                                       <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>Au Paradis Tropical   </h3>
+                          <small>6 rue Custine 18 eme Arrondissement, 75018 Paris France</small>                      </div>
+                                          </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/pages/Au%20Paradis%20Tropical/120536571335276/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+              
+                <li>
+                  <div class="score"> <a href="https://www.google.com/maps/place/Au+Paradis+Tropical/@48.8878283,2.3489379,15z/data=!4m2!3m1!1s0x0:0xb636cf1ebcb6a59f?sa=X&ved=2ahUKEwiaiePi2J7xAhUR2BoKHY_wA5sQ_BIwEnoECFIQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+              </li>
+          
+                  </ul>
+            </div>
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Traiteurs Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Traiteurs / Restaurants</span>
+                    <img src="img/bam.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="https://www.facebook.com/Banm-Bokit-Traiteur-Evenementiel-160785494078420/" target="_blank" class="strip_info">                                                       <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>BANM BOKIT  </h3>
+                          <small>20 Rue Barbanègre, 75019 Paris</small>                      </div>
+                                          </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/Banm-Bokit-Traiteur-Evenementiel-160785494078420/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.instagram.com/banmbokit/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                </li>
+                  <li>
+                    <div class="score"> <a href="https://twitter.com/BanmBokit?fbclid=IwAR2Yx5kmr7uLxVnwz6Dy7O5jUK-RBRdiwIV1o7xdDlfNGyHoWDuO6YxQHQc"  target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></div>
+                </li>
+                <li>
+                  <div class="score"> <a href="https://www.google.com/maps/place/BANM+BOKIT/@48.8935617,2.3848738,15z/data=!4m5!3m4!1s0x0:0xba3e8c9734ef43ae!8m2!3d48.8935543!4d2.3848786"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+              </li>
+          
+                  </ul>
+            </div>
+              </div>
+              <!-- /strip grid -->
+              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+                <div class="strip">
+                  <figure>
+                    <span class="ribbon off">Restaurants</span>
+                    <img src="img/BokitAw.png" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+                    <a href="http://bokitaw.fr/" target="_blank" class="strip_info">                                                       <small>
+                          <div class="button add-to-cart ">
+                            <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                              <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                              <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                              <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                              <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                              <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                              <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+                            </g>
+                          </svg>
+                          </div>
+                        </small>
+                        <div class="item_title">
+                          <h3>Bokit'Aw                          </h3>
+                          <small>52 Rue Boinod, 75018 Paris</small>                      </div>
+                                          </a>
+                  </figure>
+                  <ul>
+                    <li><span class="loc_open">Ouvert</span></li>
+                    <li>
+                      <div class="score"> <a href="https://www.facebook.com/bokitaw"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+                  </li>
+                  <li>
+                    <div class="score"> <a href="https://www.instagram.com/bokitaw/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+                </li>
+                <li>
+                  <div class="score"> <a href="https://www.google.com/maps/place/Bokit'Aw/@48.8946886,2.3525608,15z/data=!4m5!3m4!1s0x0:0xdb3564e35f3f9a4e!8m2!3d48.8948644!4d2.3527885"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+              </li>
+      
+                  </ul>
+            </div>
+              </div>
+ <!-- /strip grid -->
+ <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="75 Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Restaurants</span>
+      <img src="img/bokitf.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="https://bokitfactory.fr/fr" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>Bokit Factory</h3>
+            <small>58 Rue des Bergers, 75015 Paris</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://www.facebook.com/bokitfactory/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+    <li>
+      <div class="score"> <a href="https://www.instagram.com/bokit_factory/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+  </li>
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/Bokit+Factory/@48.8423456,2.2804859,15z/data=!4m2!3m1!1s0x0:0x1a7dadc5a3642248?sa=X&ved=2ahUKEwiijL67tZ_xAhWF3oUKHWl8A2gQ_BIwG3oECFwQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+ <!-- /strip grid -->
+ <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="94 Food" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Food-Trucks</span>
+      <img src="img/ange.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="https://www.facebook.com/Lange-Bokits-1345052512183579/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>L'Ange Bokits</h3>
+            <small>115-117 Avenue Raspail Devant le Parc du Coteau, 94250 Gentilly</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://fr-fr.facebook.com/Lange-Bokits-1345052512183579/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+   
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/L%E2%80%99Ange+Bokits/@48.8088643,2.3427475,15z/data=!4m2!3m1!1s0x0:0x4e328a84c447a2fc?sa=X&ved=2ahUKEwir8dXttp_xAhWH3YUKHeLmDfoQ_BIwCnoECDwQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+ <!-- /strip grid -->
+ <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="92 Food" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Food-Trucks</span>
+      <img src="https://bokitandco.com/wp-content/uploads/2019/01/camion-site-web-1.png" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="https://bokitandco.com/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>Bokit and Co</h3>
+            <small>170 Avenue de Verdun, 92320 Châtillon</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://www.facebook.com/bktndc/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+    <li>
+      <div class="score"> <a href="https://www.instagram.com/bokitandco/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+  </li>
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/Bokit+and+Co/@48.7939451,2.27257,15z/data=!4m5!3m4!1s0x0:0x8c22f1f642a9ac18!8m2!3d48.7939451!4d2.27257?hl=fr"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+<!-- /strip grid -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="93 Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Restaurants</span>
+      <img src="img/kingbb.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="https://www.facebook.com/KING-BOKIT-111237463737962/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>KING BOKIT</h3>
+            <small>7 Rue Edgar Quinet, 93350 Le Bourget</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://www.facebook.com/KING-BOKIT-111237463737962/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+   
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/KING+BOKIT/@48.9400633,2.5313909,15z/data=!4m2!3m1!1s0x0:0x3a0ed683e079a972?sa=X&hl=fr&ved=2ahUKEwiYy92OuZ_xAhVGCxoKHUJPBe4Q_BIwDHoECEIQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+<!-- /strip grid -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="77 Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Restaurants</span>
+      <img src="img/iles.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="https://www.facebook.com/lileauxbokitsparis/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>L'île aux Bokits            </h3>
+            <small>34 Boulevard de Nesles, 77420 Champs-sur-Marne</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://www.facebook.com/lileauxbokitsparis/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+    <li>
+      <div class="score"> <a href="https://www.instagram.com/lileauxbokits/?hl=fr"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+  </li>
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/L'%C3%AEle+aux+Bokits/@48.8491582,2.581926,15z/data=!4m2!3m1!1s0x0:0xde9fbf727941a7f7?sa=X&ved=2ahUKEwju0fiuup_xAhUCKBoKHa14ADUQ_BIwEnoECEcQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+<!-- /strip grid -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="94 Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Restaurants</span>
+      <img src="img/chezles.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="https://www.facebook.com/fillesdemamans/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>Chez Les Filles à ManMan'S</h3>
+            <small>55 Avenue la Bruyère, 94400 Vitry-sur-Seine</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://www.facebook.com/fillesdemamans/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/Chez+Les+Filles+%C3%A0+ManMan'S/@48.7859017,2.4024523,15z/data=!4m2!3m1!1s0x0:0xa10335b6162c9e76?sa=X&hl=fr&ved=2ahUKEwin75HBvJ_xAhWiyYUKHUDQA3MQ_BIwCnoECDsQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+<!-- /strip grid -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="91 Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Restaurants</span>
+      <img src="img/EKA.png" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="http://www.restaurant-antillais-91.fr/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>Esprit Karaïb - restaurant antillais 91 </h3>
+            <small>61 Route de Corbeil, 91700 Sainte-Geneviève-des-Bois</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://fr-fr.facebook.com/RestaurantEspritKaraib/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/Esprit+Kara%C3%AFb+-+Restaurant+Antillais+91+-+Bokit/@48.6439046,2.3345813,15z/data=!4m2!3m1!1s0x0:0xe7e2f3a0a36b8cd5?sa=X&hl=fr&ved=2ahUKEwicldLfvp_xAhUSJhoKHZAoCaQQ_BIwEnoECFYQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+<!-- /strip grid -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="78 Traiteurs Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Traiteurs / Restaurants</span>
+      <img src="img/plaisir.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="https://www.plaisir-des-tropiques.fr/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>Plaisir des Tropiques</h3>
+            <small>15 Rue d'Estienne d'Orves, 78500 Sartrouville</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://fr-fr.facebook.com/plaisirdestrop/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+    <li>
+      <div class="score"> <a href="https://www.instagram.com/plaisirdestrop/"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+  </li>
+  <li>
+    <div class="score"> <a href="https://twitter.com/plaisirdestrop?lang=fr"  target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></div>
+</li>
+<li>
+  <div class="score"> <a href="http://www.snapchat.com/add/plaisirdestrop"  target="_blank" style="color:rgb(255, 196, 0)"><i class="fab fa-snapchat-square fa-2x"></i></a></div>
+</li>
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/Plaisir+des+Tropiques/@48.9473512,2.2027118,15z/data=!4m2!3m1!1s0x0:0x683628cc9ef6f7b4?sa=X&hl=fr&ved=2ahUKEwjBsNyQwJ_xAhUhzYUKHarxChkQ_BIwFHoECEYQBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+<!-- /strip grid -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="77 Traiteurs Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Traiteurs / Restaurants</span>
+      <img src="img/kaaz.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="http://kaaz-bokit.com/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>Kaaz Bokit</h3>
+            <small>125 Avenue Charles Gide, 77270 Villeparisis</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://www.facebook.com/kaaz.bokit"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+    <li>
+      <div class="score"> <a href="https://www.instagram.com/kaaz.bokit/"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+  </li>
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/Kaaz+Bokit/@48.9494406,2.6018786,15z/data=!4m2!3m1!1s0x0:0x235b8541b2825b6c?sa=X&ved=2ahUKEwjLo-D-wp_xAhXIzYUKHcPeBeoQ_BIwFnoECE4QBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+<!-- /strip grid -->
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 flower" data-id="aloe" data-category="92 Restaurants" >
+  <div class="strip">
+    <figure>
+      <span class="ribbon off">Restaurants</span>
+      <img src="img/esca.jpg" data-src="img/chick.jpg" class="owl-lazy" alt="" style="opacity: 1;">
+      <a href="http://lescalecaraibeenne.com/" target="_blank" class="strip_info">                                                       <small>
+            <div class="button add-to-cart ">
+              <svg width="35px" height="25px" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <path class="heart-stroke" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-full" d="M13.0185191,4.25291223 L12.9746137,4.25291223 C10.1097846,4.25291223 8.67188189,6.6128289 8.5182129,8.92335198 C8.39747298,10.6740809 8.73225185,12.8528876 14.0777375,18.4782704 C14.7127154,19.1080239 15.5654911,19.4695694 16.4596069,19.4880952 C17.3247917,19.4700909 18.1444718,19.0969678 18.7262246,18.4563177 C19.3189478,17.9074999 24.5052763,12.5894551 24.3570955,8.98921012 C24.2363556,6.42623084 22.123407,4.25291223 19.7525139,4.25291223 C18.5053576,4.22947431 17.3125171,4.76253118 16.4980242,5.70727948 C15.6177331,4.73767759 14.354699,4.20555668 13.04596,4.25291223 L13.0185191,4.25291223 Z" fill="#0090E3"/>
+                <path class="heart-lines" d="M26,4 L30.6852129,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines"d="M2.314788,4 L7.00000086,0.251829715" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 10.314788 1)"/>
+                <path class="heart-lines" d="M27,12 L33,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" />
+                <path class="heart-lines" d="M0,12 L6,12" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 7 1)"/>
+                <path class="heart-lines" d="M24,19 L28.6852129,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round"/>
+                <path class="heart-lines" d="M4.314788,19 L9.00000086,22.7481703" stroke="#0090E3" stroke-width="2" stroke-linecap="round" transform="matrix(-1 0 0 1 14.314788 1)"/>
+              </g>
+            </svg>
+            </div>
+          </small>
+          <div class="item_title">
+            <h3>L'Escale Caraibéenne</h3>
+            <small>3 Galerie de la Fontaine, 92360 Meudon</small>                      </div>
+                            </a>
+    </figure>
+    <ul>
+      <li><span class="loc_open">Ouvert</span></li>
+      <li>
+        <div class="score"> <a href="https://www.facebook.com/lescalecaraibeenne/"  target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+    </li>
+    <li>
+      <div class="score"> <a href="https://www.instagram.com/lescalecaraibeenne/"  target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a></div>
+  </li>
+  <li>
+    <div class="score"> <a href="https://www.google.com/maps/place/L'escale+cara%C3%AFb%C3%A9enne/@48.787406,2.227586,15z/data=!4m2!3m1!1s0x0:0xf6728b2d33bbc9d7?sa=X&hl=fr&ved=2ahUKEwiKuvDvwp_xAhVHz4UKHQAZA3IQ_BIwEHoECE8QBQ"  target="_blank"><i class="fas fa-map-marker-alt fa-2x"></i></a></div>
+</li>
+
+    </ul>
+</div>
+</div>
+              <!-- /strip grid -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /col -->
+        </div>		
+      </div>
+      <!-- /container -->
+      
+    </main>
+    
+
+<!-- partial -->
+
+<!-- partial -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <h3 data-target="#collapse_1">LIENS</h3>
+        <div class="collapse dont-collapse-sm links" id="collapse_1">
+          <ul>
+            <li><a href="Inscription2.html">Ajoutez votre restaurant</a></li>
+            <li><a href="help.html">Aide</a></li>
+            <li><a href="account.html">Mon compte</a></li>
+            <li><a href="Restaurateurs2.html">Wishlist</a></li>
+            <li><a href="Map2.html">Localisation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h3 data-target="#collapse_2">Categories</h3>
+        <div class="collapse dont-collapse-sm links" id="collapse_2">
+          <ul>
+            <li><a href="Restaurateurs2.html">Boutiques</a></li>
+            <li><a href="Restaurateurs2.html">Restaurants</a></li>
+            <li><a href="Restaurateurs2.html">Food-Trucks</a></li>
+            <li><a href="Restaurateurs2.html">Traiteurs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+          <h3 data-target="#collapse_3">Contacts</h3>
+        <div class="collapse dont-collapse-sm contacts" id="collapse_3">
+          <ul>
+            <li><i class="fas fa-home"></i>97845 Baker st. 567<br>Montreal - CN</li>
+            <li><i class="fas fa-mobile-alt"></i>+94 423-23-221</li>
+            <li><i class="far fa-envelope"></i><a href="#0" style="color: #ffffff">info@Karaïbesfoods.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+          <h3 data-target="#collapse_4">RESTONS EN CONTACT</h3>
+        <div class="collapse dont-collapse-sm" id="collapse_4">
+          <div id="newsletter">
+            <div id="message-newsletter"></div>
+            <form method="post" action="assets/newsletter.php" name="newsletter_form" id="newsletter_form">
+              <div class="form-group">
+                <input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="Votre email">
+                <button type="submit" id="submit-newsletter"><i class="fas fa-angle-right"></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="follow_us">
+            <h5>SUIVEZ-NOUS</h5>
+            <ul>
+              <li><a href="https://twitter.com/CodeMatth" target="_blank"><img src="./img/twitter_icon.svg" data-src="img/twitter_icon.svg" alt="" class="lazy loaded" data-was-processed="true"></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook_icon.svg" data-src="img/facebook_icon.svg" alt="" class="lazy loaded" data-was-processed="true"></a></li>
+              <li><a href="https://github.com/matthCorvo/KARAIBESFOODS" target="_blank" style="background:#fff;border-radius: 20%;"><img src="./img/signe-github.svg" data-src="img/instagram_icon.svg" alt="" class="lazy loaded" data-was-processed="true" ></a></li>
+              <li><a href="https://www.linkedin.com/in/corvomatthieu/" target="_blank"style="background:#fff;border-radius: 10%;"><img src="./img/linkedin-svgrepo-com.svg"  data-src="img/facebook_icon.svg" alt="" class="lazy loaded" data-was-processed="true"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /row-->
+    <hr>
+    <div class="row add_bottom_25">
+      <div class="col-lg-6">
+        <ul class="footer-selector clearfix">
+          <li>
+            <div class="styled-select lang-selector" >
+              <select>
+                <option value="English" selected="" style="color: black;">Anglais</option>
+                <option value="French" style="color: black;">Francais</option>
+                <option value="Spanish" style="color: black;">Espagnole</option>
+                <option value="Russian" style="color: black;">Créole</option>
+              </select>
+            </div>
+          </li>
+         
+          <li><img src="img/cards_all.svg" data-src="img/cards_all.svg" alt="" width="198" height="30" class="lazy loaded" data-was-processed="true"></li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <ul class="additional_links">
+          <li><a href="CGU.html">Conditions générales d'utilisation          </a></li>
+          <li><a href="https://matthcorvo.github.io/CORVOMatthieu-Portfolio-Professionnel-V.3/"><span>© MatthC</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Button -->
+<div onclick="ScrollTop()" id="top-btn">
+  <i class="fa fa-angle-up"></i>
+</div>
+<!-- -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="js/sidebar.js"></script>
+<script src="js/filtre.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js'></script>
+<script src='https://superal.github.io/canvas2image/canvas2image.js'></script>
+<script src="js/wish.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- Custom Script -->
+  <script src="js/totop.js"></script>
+  <script src="js/Navbar.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/Cart.js"></script>
+  <script src="js/cookies.js"></script>
+
+</body>
+</html>
