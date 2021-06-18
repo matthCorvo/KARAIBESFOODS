@@ -1,0 +1,119 @@
+.container1  {
+    margin-left:25% ;
+    width: 80%;
+  }
+  
+  
+  
+  .shopping-cart {
+    margin: 20px 0;
+    float: right;
+    background: rgba(211, 211, 211, 0.637);
+    width: 320px;
+    position: relative;
+    border-radius: 3px;
+    padding: 20px;    display: none;
+border: 2px dashed orangered;
+  }
+  .shopping-cart .shopping-cart-header {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 15px;
+  }
+  .shopping-cart .shopping-cart-header .shopping-cart-total {
+    float: right;
+  }
+  .shopping-cart .shopping-cart-items {
+    padding-top: 20px;
+  }
+  .shopping-cart .shopping-cart-items li {
+    margin-bottom: 18px;
+    list-style: none;
+  }
+  .shopping-cart .shopping-cart-items img {
+    float: left;
+    margin-right: 12px;
+  }
+  .shopping-cart .shopping-cart-items .item-name {
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  .shopping-cart .shopping-cart-items .item-price {
+    color: #6394F8;
+    margin-right: 8px;
+  }
+  .shopping-cart .shopping-cart-items .item-quantity {
+    color: #ABB0BE;
+  }
+  
+  .shopping-cart:after {
+    bottom: 100%;
+    left: 89%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: white;
+    border-width: 8px;
+    margin-left: -8px;
+  }
+  
+  .cart-icon {
+    color: #515783;
+    font-size: 24px;
+    margin-right: 7px;
+    float: left;
+  }
+  
+  .container1  .button {
+    background: orangered;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+    font-weight: bolder;
+  }
+  .container1  .button:hover {
+    background: rgb(248, 82, 22);
+  }
+  
+  .container1  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .container1  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.container1 .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
